@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/polymorphic_container.dir/polymorphic_container.cpp.o CMakeFiles/polymorphic_container.dir/polymorphic_container_types.cpp.o  -o polymorphic_container -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

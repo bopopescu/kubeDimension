@@ -1,1 +1,0 @@
-/usr/bin/c++    -O2 -mtune=native -Wall -pedantic   CMakeFiles/vector_of_vectors_example.dir/vector_of_vectors_example.cpp.o  -o ../bin/vector_of_vectors_example -rdynamic 

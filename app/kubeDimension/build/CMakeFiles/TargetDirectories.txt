@@ -1,4 +1,0 @@
-/src/app/kubeDimension/build/CMakeFiles/uninstall.dir
-/src/app/kubeDimension/build/tools/tcpRequest/CMakeFiles/tcpRequest.dir
-/src/app/kubeDimension/build/app/CMakeFiles/find_object_app.dir
-/src/app/kubeDimension/build/src/CMakeFiles/find_object.dir

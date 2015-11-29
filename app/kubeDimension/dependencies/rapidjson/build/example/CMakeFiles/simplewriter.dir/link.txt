@@ -1,1 +1,0 @@
-/usr/bin/c++    -march=native -Wall -Wextra -Werror -Werror -Wall -Wextra -Weffc++ -Wswitch-default   CMakeFiles/simplewriter.dir/simplewriter/simplewriter.cpp.o  -o ../bin/simplewriter -rdynamic 

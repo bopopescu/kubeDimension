@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -O2 -g -DNDEBUG   CMakeFiles/test_function_function.dir/lib/function/test/test_function.cpp.o  -o test_function_function -rdynamic libbooster.so.0.0.2 -lpthread -lpcre -licuuc -licui18n -licudata -ldl -Wl,-rpath,/src/app/find-object/dependencies/primarysources/cppcms/build/booster 

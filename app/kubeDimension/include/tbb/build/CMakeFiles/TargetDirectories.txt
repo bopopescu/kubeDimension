@@ -1,7 +1,0 @@
-/src/app/find-object/include/tbb/build/CMakeFiles/tbbmalloc_proxy.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbbmalloc.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbbmalloc_static.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbb.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbbmalloc_proxy_static.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbb_static.dir
-/src/app/find-object/include/tbb/build/CMakeFiles/tbb_def_files.dir

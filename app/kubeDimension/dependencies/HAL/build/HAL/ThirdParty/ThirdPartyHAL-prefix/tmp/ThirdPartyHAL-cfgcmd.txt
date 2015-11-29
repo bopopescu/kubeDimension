@@ -1,1 +1,0 @@
-cmd='cmake;-E;copy_directory;.;/src/app/find-object/dependencies/HAL/HAL/ThirdParty/ThirdParty'

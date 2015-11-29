@@ -1,2 +1,0 @@
-/usr/bin/ar qc libunit_test_lib4.a  CMakeFiles/unit_test_lib4.dir/generics_test.cpp.o CMakeFiles/unit_test_lib4.dir/merge_test.cpp.o
-/usr/bin/ranlib libunit_test_lib4.a

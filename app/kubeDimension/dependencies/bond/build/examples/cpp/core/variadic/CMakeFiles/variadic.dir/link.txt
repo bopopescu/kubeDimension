@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/variadic.dir/variadic.cpp.o  -o variadic -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

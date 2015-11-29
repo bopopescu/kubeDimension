@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -O2 -g -DNDEBUG   CMakeFiles/test_thread_fork.dir/lib/thread/test/test_fork.cpp.o  -o test_thread_fork -rdynamic libbooster.so.0.0.2 -lpthread -lpcre -licuuc -licui18n -licudata -ldl -Wl,-rpath,/src/app/find-object/dependencies/primarysources/cppcms/build/booster 

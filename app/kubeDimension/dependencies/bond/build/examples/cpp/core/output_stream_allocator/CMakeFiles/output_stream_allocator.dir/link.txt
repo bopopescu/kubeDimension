@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/output_stream_allocator.dir/output_stream_allocator.cpp.o CMakeFiles/output_stream_allocator.dir/output_stream_allocator_types.cpp.o  -o output_stream_allocator -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

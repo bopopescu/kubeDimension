@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/static_array.dir/static_array_types.cpp.o CMakeFiles/static_array.dir/static_array.cpp.o  -o static_array -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

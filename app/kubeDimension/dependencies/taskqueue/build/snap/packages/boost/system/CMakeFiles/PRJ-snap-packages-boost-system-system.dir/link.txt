@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsystem.a  CMakeFiles/PRJ-snap-packages-boost-system-system.dir/__/libs/system/src/error_code.cpp.o
-/usr/bin/ranlib libsystem.a

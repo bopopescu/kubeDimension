@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/container_of_pointers.dir/container_of_pointers_types.cpp.o CMakeFiles/container_of_pointers.dir/container_of_pointers.cpp.o  -o container_of_pointers -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -O2 -g -DNDEBUG   CMakeFiles/test_locale_config.dir/lib/locale/test/test_config.cpp.o  -o test_locale_config -rdynamic libbooster.so.0.0.2 -lpthread -lpcre -licuuc -licui18n -licudata -ldl -Wl,-rpath,/src/app/find-object/dependencies/primarysources/cppcms/build/booster 

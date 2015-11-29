@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -O2 -g -DNDEBUG   CMakeFiles/test_aio_prefork.dir/lib/aio/test/test_prefork.cpp.o  -o test_aio_prefork -rdynamic libbooster.so.0.0.2 -lpthread -lpcre -licuuc -licui18n -licudata -ldl -Wl,-rpath,/src/app/find-object/dependencies/primarysources/cppcms/build/booster 

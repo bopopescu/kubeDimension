@@ -1,3 +1,0 @@
-/src/app/find-object/dependencies/bgslibrary/build/CMakeFiles/bgs_demo.dir
-/src/app/find-object/dependencies/bgslibrary/build/CMakeFiles/bgs_bin.dir
-/src/app/find-object/dependencies/bgslibrary/build/CMakeFiles/bgs.dir

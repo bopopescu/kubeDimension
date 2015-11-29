@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/PRJ-snap-packages-progress-test-test_progress.dir/test_progress.cpp.o  -o test_progress -rdynamic ../../google/glog/libglog.a ../../google/gflags/libgflags.a ../../google/base/libbase.a -lpthread -lcrypto -lssl 

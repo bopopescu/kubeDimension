@@ -1,3 +1,0 @@
-/src/app/find-object/dependencies/HAL/build/CMakeFiles/uninstall.dir
-/src/app/find-object/dependencies/HAL/build/HAL/CMakeFiles/hal.dir
-/src/app/find-object/dependencies/HAL/build/HAL/ThirdParty/CMakeFiles/ThirdPartyHAL.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libunit_test_idl.a  CMakeFiles/unit_test_idl.dir/idl.cpp.o
-/usr/bin/ranlib libunit_test_idl.a

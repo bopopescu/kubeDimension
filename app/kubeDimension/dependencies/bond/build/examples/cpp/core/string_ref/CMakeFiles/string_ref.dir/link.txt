@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/string_ref.dir/string_ref_types.cpp.o CMakeFiles/string_ref.dir/string_ref.cpp.o  -o string_ref -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

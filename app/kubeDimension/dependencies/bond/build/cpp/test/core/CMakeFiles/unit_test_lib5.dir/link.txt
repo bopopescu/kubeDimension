@@ -1,2 +1,0 @@
-/usr/bin/ar qc libunit_test_lib5.a  CMakeFiles/unit_test_lib5.dir/list_tests.cpp.o CMakeFiles/unit_test_lib5.dir/serialization_test.cpp.o CMakeFiles/unit_test_lib5.dir/allocator_test.cpp.o CMakeFiles/unit_test_lib5.dir/set_tests.cpp.o CMakeFiles/unit_test_lib5.dir/basic_type_lists.cpp.o CMakeFiles/unit_test_lib5.dir/nullable.cpp.o
-/usr/bin/ranlib libunit_test_lib5.a

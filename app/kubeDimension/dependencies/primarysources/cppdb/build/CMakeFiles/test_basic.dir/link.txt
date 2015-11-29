@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -O2 -g -DNDEBUG   CMakeFiles/test_basic.dir/test/test_basic.cpp.o  -o test_basic -rdynamic libcppdb.so.0.3.1 -ldl -lpthread -Wl,-rpath,/src/app/find-object/dependencies/primarysources/cppdb/build 

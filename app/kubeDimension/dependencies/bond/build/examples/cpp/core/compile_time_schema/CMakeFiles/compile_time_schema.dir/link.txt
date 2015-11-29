@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/compile_time_schema.dir/compile_time_schema.cpp.o CMakeFiles/compile_time_schema.dir/compile_time_schema_types.cpp.o  -o compile_time_schema -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

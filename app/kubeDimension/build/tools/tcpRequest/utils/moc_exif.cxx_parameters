@@ -1,8 +1,0 @@
--I/usr/local/include
--DPROJECT_PREFIX="find_object"
--DPROJECT_VERSION="0.6.0"
--DPROJECT_NAME="Find-Object"
--DQT_NO_KEYWORDS
--o
-/src/app/kubeDimension/build/tools/tcpRequest/utils/moc_exif.cxx
-/src/app/kubeDimension/tools/tcpRequest/utils/exif.h

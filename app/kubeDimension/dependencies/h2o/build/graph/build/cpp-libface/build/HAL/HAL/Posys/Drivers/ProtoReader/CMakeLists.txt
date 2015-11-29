@@ -1,1 +1,0 @@
-add_to_hal_sources( ProtoReaderPosysDriver.h ProtoReaderPosysDriver.cpp ProtoReaderPosysFactory.cpp )

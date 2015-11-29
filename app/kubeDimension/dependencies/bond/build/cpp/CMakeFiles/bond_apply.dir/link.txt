@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbond_apply.a  CMakeFiles/bond_apply.dir/bond/core/bond_apply.cpp.o CMakeFiles/bond_apply.dir/bond/core/bond_const_apply.cpp.o
-/usr/bin/ranlib libbond_apply.a

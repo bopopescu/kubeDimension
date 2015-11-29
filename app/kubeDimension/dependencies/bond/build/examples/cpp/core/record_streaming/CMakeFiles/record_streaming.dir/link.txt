@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/record_streaming.dir/record_streaming.cpp.o CMakeFiles/record_streaming.dir/record_streaming_types.cpp.o  -o record_streaming -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

@@ -1,0 +1,7 @@
+flann.cpp.o
+*.tar.gz
+*libflann_s.a
+tempVoc.yaml.gz
+libcppcms.a
+*.a
+*.o

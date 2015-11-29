@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/generics.dir/generics.cpp.o CMakeFiles/generics.dir/generics_types.cpp.o  -o generics -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

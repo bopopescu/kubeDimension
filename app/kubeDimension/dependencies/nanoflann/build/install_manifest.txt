@@ -1,0 +1,2 @@
+/usr/local/lib/pkgconfig/nanoflann.pc
+/usr/local/include/nanoflann.hpp

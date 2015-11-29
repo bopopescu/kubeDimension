@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbase.a  CMakeFiles/PRJ-snap-packages-google-base-base.dir/hashutils.cc.o CMakeFiles/PRJ-snap-packages-google-base-base.dir/int128.cc.o CMakeFiles/PRJ-snap-packages-google-base-base.dir/stringprintf.cc.o CMakeFiles/PRJ-snap-packages-google-base-base.dir/strtoint.cc.o
+/usr/bin/ranlib libbase.a

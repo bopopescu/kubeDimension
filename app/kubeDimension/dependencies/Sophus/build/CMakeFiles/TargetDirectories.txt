@@ -1,0 +1,7 @@
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_rxso3.dir
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_se3.dir
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_so3.dir
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_se2.dir
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_sim3.dir
+/src/app/find-object/dependencies/Sophus/build/test/core/CMakeFiles/test_so2.dir
+/src/app/find-object/dependencies/Sophus/build/CMakeFiles/libsophus.dir

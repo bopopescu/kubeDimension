@@ -1,0 +1,297 @@
+[
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/ANGLE.dir/util/compute_angle.cpp.o -c /src/app/find-object/dependencies/osrm-backend/util/compute_angle.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/util/compute_angle.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/COMPRESSEDEDGE.dir/data_structures/compressed_edge_container.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/compressed_edge_container.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/compressed_edge_container.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/COORDINATE.dir/data_structures/coordinate.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/coordinate.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/coordinate.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/COORDINATE.dir/algorithms/coordinate_calculation.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/coordinate_calculation.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/coordinate_calculation.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/EXCEPTION.dir/util/osrm_exception.cpp.o -c /src/app/find-object/dependencies/osrm-backend/util/osrm_exception.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/util/osrm_exception.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/FINGERPRINT.dir/util/fingerprint.cpp.o -c /src/app/find-object/dependencies/osrm-backend/util/fingerprint.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/util/fingerprint.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/GRAPHCOMPRESSOR.dir/algorithms/graph_compressor.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/graph_compressor.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/graph_compressor.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/IMPORT.dir/data_structures/import_edge.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/import_edge.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/import_edge.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/IMPORT.dir/data_structures/external_memory_node.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/external_memory_node.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/external_memory_node.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/IMPORT.dir/data_structures/raster_source.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/raster_source.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/raster_source.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/LOGGER.dir/util/simple_logger.cpp.o -c /src/app/find-object/dependencies/osrm-backend/util/simple_logger.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/util/simple_logger.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/MERCATOR.dir/util/mercator.cpp.o -c /src/app/find-object/dependencies/osrm-backend/util/mercator.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/util/mercator.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/library/osrm_impl.cpp.o -c /src/app/find-object/dependencies/osrm-backend/library/osrm_impl.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/library/osrm_impl.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/descriptors/description_factory.cpp.o -c /src/app/find-object/dependencies/osrm-backend/descriptors/description_factory.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/descriptors/description_factory.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/data_structures/search_engine_data.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/search_engine_data.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/search_engine_data.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/data_structures/route_parameters.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/route_parameters.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/route_parameters.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/algorithms/polyline_compressor.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/polyline_compressor.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/polyline_compressor.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/algorithms/polyline_formatter.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/polyline_formatter.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/polyline_formatter.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/algorithms/douglas_peucker.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/douglas_peucker.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/douglas_peucker.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/OSRM.dir/server/http/reply.cpp.o -c /src/app/find-object/dependencies/osrm-backend/server/http/reply.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/server/http/reply.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/PHANTOMNODE.dir/data_structures/phantom_node.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/phantom_node.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/phantom_node.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/RASTERSOURCE.dir/data_structures/raster_source.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/raster_source.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/raster_source.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/RESTRICTION.dir/data_structures/restriction_map.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/restriction_map.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/restriction_map.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithm_tests.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithm_tests.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithm_tests.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithms/graph_compressor.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/graph_compressor.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/graph_compressor.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithms/string_util.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/string_util.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/string_util.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithms/geometry_string.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/geometry_string.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/geometry_string.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithms/duration_parsing.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/duration_parsing.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/duration_parsing.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/unit_tests/algorithms/douglas_peucker.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/douglas_peucker.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/algorithms/douglas_peucker.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/algorithm-tests.dir/algorithms/graph_compressor.cpp.o -c /src/app/find-object/dependencies/osrm-backend/algorithms/graph_compressor.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/algorithms/graph_compressor.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/datastructure_tests.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/datastructure_tests.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/datastructure_tests.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/range_table.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/range_table.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/range_table.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/compressed_edge_container.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/compressed_edge_container.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/compressed_edge_container.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/raster_source.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/raster_source.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/raster_source.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/dynamic_graph.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/dynamic_graph.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/dynamic_graph.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/binary_heap.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/binary_heap.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/binary_heap.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/static_rtree.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/static_rtree.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/static_rtree.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/coordinate.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/coordinate.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/coordinate.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/unit_tests/data_structures/static_graph.cpp.o -c /src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/static_graph.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/unit_tests/data_structures/static_graph.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/datastructure-tests.dir/data_structures/hilbert_value.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-datastore.dir/datastore.cpp.o -c /src/app/find-object/dependencies/osrm-backend/datastore.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/datastore.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extract.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extract.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extract.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/extractor_options.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/extractor_options.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/extractor_options.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/extractor.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/extractor.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/extractor.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/restriction_parser.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/restriction_parser.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/restriction_parser.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/extraction_containers.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/extraction_containers.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/extraction_containers.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/edge_based_graph_factory.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/edge_based_graph_factory.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/edge_based_graph_factory.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/extractor_callbacks.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/extractor_callbacks.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/extractor_callbacks.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/extractor/scripting_environment.cpp.o -c /src/app/find-object/dependencies/osrm-backend/extractor/scripting_environment.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/extractor/scripting_environment.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-extract.dir/data_structures/hilbert_value.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-prepare.dir/prepare.cpp.o -c /src/app/find-object/dependencies/osrm-backend/prepare.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/prepare.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-prepare.dir/contractor/contractor_options.cpp.o -c /src/app/find-object/dependencies/osrm-backend/contractor/contractor_options.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/contractor/contractor_options.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-prepare.dir/contractor/processing_chain.cpp.o -c /src/app/find-object/dependencies/osrm-backend/contractor/processing_chain.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/contractor/processing_chain.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-prepare.dir/data_structures/hilbert_value.cpp.o -c /src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/data_structures/hilbert_value.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-routed.dir/routed.cpp.o -c /src/app/find-object/dependencies/osrm-backend/routed.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/routed.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-routed.dir/server/request_handler.cpp.o -c /src/app/find-object/dependencies/osrm-backend/server/request_handler.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/server/request_handler.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-routed.dir/server/connection.cpp.o -c /src/app/find-object/dependencies/osrm-backend/server/connection.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/server/connection.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/osrm-routed.dir/server/request_parser.cpp.o -c /src/app/find-object/dependencies/osrm-backend/server/request_parser.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/server/request_parser.cpp"
+},
+{
+  "directory": "/src/app/find-object/dependencies/osrm-backend/build",
+  "command": "/usr/bin/c++   -DBOOST_TEST_DYN_LINK -I/src/app/find-object/dependencies/osrm-backend -I/src/app/find-object/dependencies/osrm-backend/build -I/src/app/find-object/dependencies/osrm-backend/include -isystem /src/app/find-object/dependencies/osrm-backend/third_party -isystem /src/app/find-object/dependencies/osrm-backend/third_party/libosmium/include -isystem /usr/include/luabind -isystem /usr/include/lua5.2  -fPIC  -Wall -Wextra -pedantic -Wuninitialized -Wunreachable-code -Wstrict-overflow=1 -D_FORTIFY_SOURCE=2  -fPIC -ffunction-sections -fdata-sections -std=c++11  -fopenmp -O3 -DNDEBUG   -o CMakeFiles/rtree-bench.dir/benchmarks/static_rtree.cpp.o -c /src/app/find-object/dependencies/osrm-backend/benchmarks/static_rtree.cpp",
+  "file": "/src/app/find-object/dependencies/osrm-backend/benchmarks/static_rtree.cpp"
+}
+]

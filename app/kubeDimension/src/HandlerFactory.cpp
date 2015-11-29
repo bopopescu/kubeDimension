@@ -1,0 +1,19 @@
+/*
+
+	kubeVision - OpenCV (part of the KubeVision)
+	Modified by: Luc Michalski - 2015
+	New features: Web-service and distributed search
+	Based on: Find-Object - Mathieu Labbe - IntRoLab - Universite de Sherbrooke
+	URL: https://github.com/introlab/find-object
+
+*/
+	
+#include "find_object/HandlerFactory.h"
+#include "find_object/MainHandler.h"
+
+Tufao::AbstractHttpServerRequestHandler *
+HandlerFactory::createHandler(QObject *parent)
+{
+    // Returning a new handler for every thread avoid the need for locks
+    return new MainHandler(parent);
+}

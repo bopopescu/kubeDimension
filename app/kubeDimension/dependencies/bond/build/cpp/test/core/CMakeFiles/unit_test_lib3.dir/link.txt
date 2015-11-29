@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunit_test_lib3.a  CMakeFiles/unit_test_lib3.dir/numeric_convertions.cpp.o
+/usr/bin/ranlib libunit_test_lib3.a

@@ -1,0 +1,5 @@
+QT += network
+
+DEFINES += TUFAO_VERSION_MAJOR=0
+INCLUDEPATH += "/usr/local/include/tufao-0"
+LIBS += -L"/usr/local/lib" -ltufao

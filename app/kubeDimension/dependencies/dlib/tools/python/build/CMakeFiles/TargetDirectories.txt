@@ -1,0 +1,2 @@
+/src/app/find-object/dependencies/dlib/tools/python/build/CMakeFiles/dlib_.dir
+/src/app/find-object/dependencies/dlib/tools/python/build/dlib_build/CMakeFiles/dlib.dir

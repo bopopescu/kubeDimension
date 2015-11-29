@@ -1,0 +1,3 @@
+repository='arpg@arpg-web.colorado.edu:git/ThirdPartyHAL'
+module=''
+tag=''

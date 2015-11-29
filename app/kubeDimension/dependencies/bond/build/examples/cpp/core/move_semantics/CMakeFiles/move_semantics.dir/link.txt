@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/move_semantics.dir/move_semantics.cpp.o CMakeFiles/move_semantics.dir/move_semantics_types.cpp.o  -o move_semantics -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

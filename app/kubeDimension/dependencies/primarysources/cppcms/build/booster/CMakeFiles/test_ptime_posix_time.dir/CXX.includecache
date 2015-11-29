@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../booster/./booster/config.h
+
+../booster/./booster/ctime.h
+booster/config.h
+-
+ctime
+-
+time.h
+-
+
+../booster/./booster/posix_time.h
+booster/config.h
+-
+ctime
+-
+iosfwd
+-
+math.h
+-
+
+../booster/lib/test/test.h
+stdexcept
+-
+sstream
+-
+
+/src/app/find-object/dependencies/primarysources/cppcms/booster/lib/ptime/test/test_posix_time.cpp
+booster/posix_time.h
+-
+booster/ctime.h
+-
+test.h
+/src/app/find-object/dependencies/primarysources/cppcms/booster/lib/ptime/test/test.h
+limits
+-
+iostream
+-
+

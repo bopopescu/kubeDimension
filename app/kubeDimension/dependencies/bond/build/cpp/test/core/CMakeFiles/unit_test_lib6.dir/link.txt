@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunit_test_lib6.a  CMakeFiles/unit_test_lib6.dir/marshal.cpp.o CMakeFiles/unit_test_lib6.dir/container_extensibility.cpp.o CMakeFiles/unit_test_lib6.dir/basic_type_map.cpp.o CMakeFiles/unit_test_lib6.dir/enum_convertions.cpp.o CMakeFiles/unit_test_lib6.dir/exception_tests.cpp.o CMakeFiles/unit_test_lib6.dir/maybe_tests.cpp.o
+/usr/bin/ranlib libunit_test_lib6.a

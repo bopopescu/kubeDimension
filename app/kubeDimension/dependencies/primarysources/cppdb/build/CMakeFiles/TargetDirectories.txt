@@ -1,0 +1,7 @@
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/example.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/test_backend.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/test_caching.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/test_basic.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/test_perf.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/cppdb-static.dir
+/src/app/find-object/dependencies/primarysources/cppdb/build/CMakeFiles/cppdb.dir

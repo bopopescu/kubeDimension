@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//cppcms/base64.h
+cppcms/defs.h
+-
+string
+-
+iosfwd
+-
+
+..//cppcms/defs.h
+
+/src/app/find-object/dependencies/primarysources/cppcms/tests/base64_test.cpp
+cppcms/base64.h
+-
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+algorithm
+-
+vector
+-
+string
+-
+cstring
+-
+

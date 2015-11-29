@@ -1,0 +1,229 @@
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57a87/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57a87.dir/build.make CMakeFiles/cmTC_57a87.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57a87.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_57a87.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_57a87
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57a87.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_57a87.dir/CheckFunctionExists.c.o  -o cmTC_57a87 -rdynamic 
+CMakeFiles/cmTC_57a87.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTC_57a87] Error 1
+make: *** [cmTC_57a87/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test BOOSTER_HAVE_GCC_BITS_EXCHANGE_AND_ADD failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_64dd8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_64dd8.dir/build.make CMakeFiles/cmTC_64dd8.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_64dd8.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DBOOSTER_HAVE_GCC_BITS_EXCHANGE_AND_ADD   -o CMakeFiles/cmTC_64dd8.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:1:29: fatal error: bits/atomicity.h: No such file or directory
+ #include <bits/atomicity.h> 
+                             ^
+compilation terminated.
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_64dd8.dir/src.cxx.o] Error 1
+make: *** [cmTC_64dd8/fast] Error 2
+
+Source file was:
+#include <bits/atomicity.h> 
+	using __gnu_cxx::__exchange_and_add;
+	int main(){ volatile int x=0; return __exchange_and_add(&x,1);}
+Performing C++ SOURCE FILE Test BOOSTER_HAVE_FREEBSD_ATOMIC failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e80a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e80a4.dir/build.make CMakeFiles/cmTC_e80a4.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e80a4.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DBOOSTER_HAVE_FREEBSD_ATOMIC   -o CMakeFiles/cmTC_e80a4.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:29: fatal error: machine/atomic.h: No such file or directory
+  #include <machine/atomic.h>
+                             ^
+compilation terminated.
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_e80a4.dir/src.cxx.o] Error 1
+make: *** [cmTC_e80a4/fast] Error 2
+
+Source file was:
+#include <sys/types.h>
+	#include <machine/atomic.h>
+	int main() { volatile unsigned v=0; return atomic_cmpset_int(&v,1,0); }
+Performing C++ SOURCE FILE Test BOOSTER_HAVE_SOLARIS_ATOMIC failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4f7cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4f7cc.dir/build.make CMakeFiles/cmTC_4f7cc.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4f7cc.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DBOOSTER_HAVE_SOLARIS_ATOMIC   -o CMakeFiles/cmTC_4f7cc.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:1:20: fatal error: atomic.h: No such file or directory
+ #include <atomic.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4f7cc.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4f7cc/fast] Error 2
+
+Source file was:
+#include <atomic.h>
+	int main() { volatile unsigned v=0; return atomic_add_int_nv(&v,1); }
+Performing C++ SOURCE FILE Test BOOSTER_HAVE_MAC_OS_X_ATOMIC failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63557/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63557.dir/build.make CMakeFiles/cmTC_63557.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63557.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DBOOSTER_HAVE_MAC_OS_X_ATOMIC   -o CMakeFiles/cmTC_63557.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:1:30: fatal error: libkern/OSAtomic.h: No such file or directory
+ #include <libkern/OSAtomic.h>
+                              ^
+compilation terminated.
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_63557.dir/src.cxx.o] Error 1
+make: *** [cmTC_63557/fast] Error 2
+
+Source file was:
+#include <libkern/OSAtomic.h>
+	int main() { int32_t v=0; return OSAtomicAdd32(1,&v); }
+Determining if the function _atoi64 exists failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e84aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e84aa.dir/build.make CMakeFiles/cmTC_e84aa.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e84aa.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=_atoi64   -o CMakeFiles/cmTC_e84aa.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e84aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e84aa.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_atoi64    CMakeFiles/cmTC_e84aa.dir/CheckFunctionExists.c.o  -o cmTC_e84aa -rdynamic 
+CMakeFiles/cmTC_e84aa.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_atoi64'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTC_e84aa] Error 1
+make: *** [cmTC_e84aa/fast] Error 2
+
+
+Determining if the function _stat exists failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ebda5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebda5.dir/build.make CMakeFiles/cmTC_ebda5.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebda5.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=_stat   -o CMakeFiles/cmTC_ebda5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ebda5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebda5.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_stat    CMakeFiles/cmTC_ebda5.dir/CheckFunctionExists.c.o  -o cmTC_ebda5 -rdynamic 
+CMakeFiles/cmTC_ebda5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_stat'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTC_ebda5] Error 1
+make: *** [cmTC_ebda5/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test CPPCMS_HAVE_CPP0X_UXSTRING failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_93761/fast"
+/usr/bin/make -f CMakeFiles/cmTC_93761.dir/build.make CMakeFiles/cmTC_93761.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_93761.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DCPPCMS_HAVE_CPP0X_UXSTRING   -o CMakeFiles/cmTC_93761.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:15: error: 'u16string' is not a member of 'std'
+  int main() { std::u16string s16; std::u32string s32; }
+               ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:30: error: expected ';' before 's16'
+  int main() { std::u16string s16; std::u32string s32; }
+                              ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:35: error: 'u32string' is not a member of 'std'
+  int main() { std::u16string s16; std::u32string s32; }
+                                   ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:50: error: expected ';' before 's32'
+  int main() { std::u16string s16; std::u32string s32; }
+                                                  ^
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_93761.dir/src.cxx.o] Error 1
+make: *** [cmTC_93761/fast] Error 2
+
+Source file was:
+#include <string> 
+	int main() { std::u16string s16; std::u32string s32; }
+Performing C++ SOURCE FILE Test CPPCMS_HAVE_CPP_0X_AUTO failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0bb2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0bb2c.dir/build.make CMakeFiles/cmTC_0bb2c.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0bb2c.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DCPPCMS_HAVE_CPP_0X_AUTO   -o CMakeFiles/cmTC_0bb2c.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:31: warning: 'auto' changes meaning in C++11; please remove it [-Wc++0x-compat]
+  int main(){std::list<int> l; auto p=l.begin();}
+                               ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:36: error: 'p' does not name a type
+  int main(){std::list<int> l; auto p=l.begin();}
+                                    ^
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_0bb2c.dir/src.cxx.o] Error 1
+make: *** [cmTC_0bb2c/fast] Error 2
+
+Source file was:
+#include <list> 
+	int main(){std::list<int> l; auto p=l.begin();}
+Performing C++ SOURCE FILE Test CPPCMS_HAVE_CPP_0X_DECLTYPE failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2826/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2826.dir/build.make CMakeFiles/cmTC_f2826.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f2826.dir/src.cxx.o
+/usr/bin/c++     -Wall -Wextra -DCPPCMS_HAVE_CPP_0X_DECLTYPE   -o CMakeFiles/cmTC_f2826.dir/src.cxx.o -c /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:2: warning: identifier 'decltype' is a keyword in C++11 [-Wc++0x-compat]
+  int main(){std::list<int> l; decltype(l.begin()) p=l.begin();}
+  ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:49: error: 'decltype' was not declared in this scope
+  int main(){std::list<int> l; decltype(l.begin()) p=l.begin();}
+                                                 ^
+/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp/src.cxx:2:51: error: expected ';' before 'p'
+  int main(){std::list<int> l; decltype(l.begin()) p=l.begin();}
+                                                   ^
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTC_f2826.dir/src.cxx.o] Error 1
+make: *** [cmTC_f2826/fast] Error 2
+
+Source file was:
+#include <list> 
+	int main(){std::list<int> l; decltype(l.begin()) p=l.begin();}
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_81b7d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81b7d.dir/build.make CMakeFiles/cmTC_81b7d.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81b7d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_81b7d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_81b7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81b7d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_81b7d.dir/CheckFunctionExists.c.o  -o cmTC_81b7d -rdynamic 
+CMakeFiles/cmTC_81b7d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/src/app/find-object/dependencies/primarysources/cppcms/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTC_81b7d] Error 1
+make: *** [cmTC_81b7d/fast] Error 2
+
+

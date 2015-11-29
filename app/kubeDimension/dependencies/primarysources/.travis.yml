@@ -1,0 +1,46 @@
+sudo: required
+language: cpp
+
+notifications:
+  email:
+  - schaffert@google.com
+  - tomac@google.com
+  - vrandecic@google.com
+  - thomaspt@google.com
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - boost-latest
+    packages:
+    - gcc-4.9
+    - g++-4.9
+    - libboost1.55-all-dev
+
+cache:
+  apt: true
+  directories:
+  - download
+  - cppcms-1.0.5
+  - cppdb-0.3.1
+
+before_install:
+  - mkdir download && cd download
+  - if [ ! -f cppcms-1.0.5.tar.bz2 ]; then wget --no-verbose http://downloads.sourceforge.net/project/cppcms/cppcms/1.0.5/cppcms-1.0.5.tar.bz2; fi
+  - if [ ! -f cppdb-0.3.1.tar.bz2 ]; then wget --no-verbose http://downloads.sourceforge.net/project/cppcms/cppdb/0.3.1/cppdb-0.3.1.tar.bz2; fi
+  - cd ..
+  - if [ ! -d cppdb-0.3.1 ]; then tar xjf download/cppdb-0.3.1.tar.bz2; fi
+  - if [ ! -d cppcms-1.0.5 ]; then tar xjf download/cppcms-1.0.5.tar.bz2; fi
+
+install:
+  - export CXX="g++-4.9" CC="gcc-4.9"
+  - mkdir -p cppcms-1.0.5/build && cd cppcms-1.0.5/build
+  - cmake .. && make && sudo make install
+  - cd ../..
+  - mkdir -p cppdb-0.3.1/build && cd cppdb-0.3.1/build
+  - cmake .. && make && sudo make install
+  - cd ../..
+
+
+script: sh -c 'cd backend && mkdir build && cd build && cmake .. && make && make test'

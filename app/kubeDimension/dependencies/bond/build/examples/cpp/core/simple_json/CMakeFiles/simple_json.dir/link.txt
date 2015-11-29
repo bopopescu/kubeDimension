@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/simple_json.dir/simple_json.cpp.o CMakeFiles/simple_json.dir/simple_json_types.cpp.o  -o simple_json -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

@@ -1,0 +1,13 @@
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/check-as-root.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/check.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/t-00unit-libuv.t.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/bundled-ssl.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/libh2o.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/t-00unit-evloop.t.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/libh2o-evloop.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/lib-examples.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/examples-socket-client.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/examples-simple.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/examples-websocket.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/examples-http1client.dir
+/src/app/find-object/dependencies/h2o/build/CMakeFiles/h2o.dir

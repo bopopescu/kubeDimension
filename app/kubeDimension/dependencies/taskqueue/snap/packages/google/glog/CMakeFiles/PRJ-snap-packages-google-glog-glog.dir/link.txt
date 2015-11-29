@@ -1,0 +1,2 @@
+/usr/bin/ar qc libglog.a  CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/demangle.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/raw_logging.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/symbolize.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/vlog_is_on.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/logging.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/signalhandler.cc.o CMakeFiles/PRJ-snap-packages-google-glog-glog.dir/utilities.cc.o
+/usr/bin/ranlib libglog.a

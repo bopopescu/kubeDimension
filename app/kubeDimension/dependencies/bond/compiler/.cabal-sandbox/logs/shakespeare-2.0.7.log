@@ -1,0 +1,96 @@
+Configuring shakespeare-2.0.7...
+Building shakespeare-2.0.7...
+Preprocessing library shakespeare-2.0.7...
+[ 1 of 18] Compiling Text.MkSizeType  ( Text/MkSizeType.hs, dist/dist-sandbox-1324612c/build/Text/MkSizeType.o )
+[ 2 of 18] Compiling Text.IndentToBrace ( Text/IndentToBrace.hs, dist/dist-sandbox-1324612c/build/Text/IndentToBrace.o )
+[ 3 of 18] Compiling Text.Shakespeare.Base ( Text/Shakespeare/Base.hs, dist/dist-sandbox-1324612c/build/Text/Shakespeare/Base.o )
+[ 4 of 18] Compiling Text.Hamlet.Parse ( Text/Hamlet/Parse.hs, dist/dist-sandbox-1324612c/build/Text/Hamlet/Parse.o )
+[ 5 of 18] Compiling Text.Hamlet      ( Text/Hamlet.hs, dist/dist-sandbox-1324612c/build/Text/Hamlet.o )
+
+Text/Hamlet.hs:434:16: Warning: Defined but not used: `html'
+
+Text/Hamlet.hs:435:14: Warning: Defined but not used: `url'
+
+Text/Hamlet.hs:436:19: Warning: Defined but not used: `url'
+
+Text/Hamlet.hs:437:16: Warning: Defined but not used: `url'
+
+Text/Hamlet.hs:438:20: Warning: Defined but not used: `msg_url'
+
+Text/Hamlet.hs:439:14: Warning: Defined but not used: `msg'
+
+Text/Hamlet.hs:483:43: Warning:
+    This binding for `c' shadows the existing binding
+      bound at Text/Hamlet.hs:479:13
+[ 6 of 18] Compiling Text.Hamlet.RT   ( Text/Hamlet/RT.hs, dist/dist-sandbox-1324612c/build/Text/Hamlet/RT.o )
+
+Text/Hamlet/RT.hs:80:13: Warning: Defined but not used: `x'
+
+Text/Hamlet/RT.hs:80:26: Warning: Defined but not used: `deref'
+
+Text/Hamlet/RT.hs:80:45: Warning: Defined but not used: `docs'
+
+Text/Hamlet/RT.hs:87:13: Warning: Defined but not used: `x'
+
+Text/Hamlet/RT.hs:87:25: Warning: Defined but not used: `deref'
+
+Text/Hamlet/RT.hs:87:44: Warning: Defined but not used: `jdocs'
+
+Text/Hamlet/RT.hs:87:50: Warning: Defined but not used: `ndocs'
+
+Text/Hamlet/RT.hs:117:37: Warning:
+    This binding for `x' shadows the existing binding
+      bound at Text/Hamlet/RT.hs:110:13
+[ 7 of 18] Compiling Text.Hamlet.Runtime ( Text/Hamlet/Runtime.hs, dist/dist-sandbox-1324612c/build/Text/Hamlet/Runtime.o )
+[ 8 of 18] Compiling Text.Shakespeare ( Text/Shakespeare.hs, dist/dist-sandbox-1324612c/build/Text/Shakespeare.o )
+[ 9 of 18] Compiling Text.Shakespeare.Text ( Text/Shakespeare/Text.hs, dist/dist-sandbox-1324612c/build/Text/Shakespeare/Text.o )
+[10 of 18] Compiling Text.Julius      ( Text/Julius.hs, dist/dist-sandbox-1324612c/build/Text/Julius.o )
+[11 of 18] Compiling Text.Roy         ( Text/Roy.hs, dist/dist-sandbox-1324612c/build/Text/Roy.o )
+[12 of 18] Compiling Text.Coffee      ( Text/Coffee.hs, dist/dist-sandbox-1324612c/build/Text/Coffee.o )
+[13 of 18] Compiling Text.Css         ( Text/Css.hs, dist/dist-sandbox-1324612c/build/Text/Css.o )
+[14 of 18] Compiling Text.CssCommon   ( Text/CssCommon.hs, dist/dist-sandbox-1324612c/build/Text/CssCommon.o )
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Loading package array-0.4.0.1 ... linking ... done.
+Loading package deepseq-1.3.0.1 ... linking ... done.
+Loading package filepath-1.3.0.1 ... linking ... done.
+Loading package old-locale-1.0.0.5 ... linking ... done.
+Loading package time-1.4.0.1 ... linking ... done.
+Loading package bytestring-0.10.0.2 ... linking ... done.
+Loading package unix-2.6.0.1 ... linking ... done.
+Loading package directory-1.2.0.1 ... linking ... done.
+Loading package process-1.1.0.2 ... linking ... done.
+Loading package transformers-0.4.3.0 ... linking ... done.
+Loading package mtl-2.2.1 ... linking ... done.
+Loading package containers-0.5.0.0 ... linking ... done.
+Loading package binary-0.5.1.1 ... linking ... done.
+Loading package text-1.2.1.3 ... linking ... done.
+Loading package parsec-3.1.9 ... linking ... done.
+Loading package stm-2.4.4 ... linking ... done.
+Loading package transformers-compat-0.4.0.4 ... linking ... done.
+Loading package exceptions-0.8.0.2 ... linking ... done.
+Loading package bytestring-builder-0.10.6.0.0 ... linking ... done.
+Loading package blaze-builder-0.4.0.1 ... linking ... done.
+Loading package blaze-markup-0.7.0.3 ... linking ... done.
+Loading package blaze-html-0.8.1.1 ... linking ... done.
+Loading package hashable-1.2.3.3 ... linking ... done.
+Loading package primitive-0.6.1.0 ... linking ... done.
+Loading package vector-0.11.0.0 ... linking ... done.
+Loading package scientific-0.3.4.4 ... linking ... done.
+Loading package attoparsec-0.13.0.1 ... linking ... done.
+Loading package dlist-0.7.1.2 ... linking ... done.
+Loading package syb-0.6 ... linking ... done.
+Loading package pretty-1.1.1.0 ... linking ... done.
+Loading package template-haskell ... linking ... done.
+Loading package unordered-containers-0.2.5.1 ... linking ... done.
+Loading package aeson-0.7.0.6 ... linking ... done.
+[15 of 18] Compiling Text.Lucius      ( Text/Lucius.hs, dist/dist-sandbox-1324612c/build/Text/Lucius.o )
+[16 of 18] Compiling Text.Cassius     ( Text/Cassius.hs, dist/dist-sandbox-1324612c/build/Text/Cassius.o )
+[17 of 18] Compiling Text.TypeScript  ( Text/TypeScript.hs, dist/dist-sandbox-1324612c/build/Text/TypeScript.o )
+[18 of 18] Compiling Text.Shakespeare.I18N ( Text/Shakespeare/I18N.hs, dist/dist-sandbox-1324612c/build/Text/Shakespeare/I18N.o )
+In-place registering shakespeare-2.0.7...
+Creating package registration file: /tmp/pkgConf-shakespeare-2.01026.7
+Installing library in
+/src/app/find-object/dependencies/bond/compiler/.cabal-sandbox/lib/x86_64-linux-ghc-7.6.3/shakespeare-2.0.7
+Registering shakespeare-2.0.7...

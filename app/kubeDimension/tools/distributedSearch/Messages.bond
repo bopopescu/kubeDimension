@@ -1,0 +1,13 @@
+namespace Message
+
+struct Request {
+  // Search request for a specific keyword
+
+  0: string keyword;
+}
+
+struct Response {
+  // Search response with matches -- may be empty
+
+  0: set<string> matches;
+}

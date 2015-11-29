@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../booster/./booster/backtrace.h
+booster/config.h
+-
+stdexcept
+-
+typeinfo
+-
+string
+-
+vector
+-
+iosfwd
+-
+
+../booster/./booster/clone_ptr.h
+
+../booster/./booster/config.h
+
+../booster/./booster/function.h
+booster/backtrace.h
+-
+booster/clone_ptr.h
+-
+
+../booster/lib/test/test.h
+stdexcept
+-
+sstream
+-
+
+/src/app/find-object/dependencies/primarysources/cppcms/booster/lib/function/test/test_function.cpp
+booster/function.h
+-
+test.h
+/src/app/find-object/dependencies/primarysources/cppcms/booster/lib/function/test/test.h
+iostream
+-
+

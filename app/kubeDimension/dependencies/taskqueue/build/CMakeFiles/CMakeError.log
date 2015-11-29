@@ -1,0 +1,18 @@
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /src/app/find-object/dependencies/taskqueue/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3fff8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3fff8.dir/build.make CMakeFiles/cmTC_3fff8.dir/build
+make[1]: Entering directory `/src/app/find-object/dependencies/taskqueue/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3fff8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3fff8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3fff8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fff8.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3fff8.dir/CheckFunctionExists.c.o  -o cmTC_3fff8 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_3fff8] Error 1
+make[1]: Leaving directory `/src/app/find-object/dependencies/taskqueue/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3fff8/fast] Error 2
+
+

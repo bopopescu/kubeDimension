@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: HAL
+Description: 
+Version: 0.2
+Cflags:   -I/usr/include/eigen3 -I/usr/local/lib/cmake/Sophus/../../../include -I/usr/include
+Libs: -L${libdir}  /usr/local/lib/libopencv_core.so.3.0.0 /usr/local/lib/libopencv_imgproc.so.3.0.0 /usr/local/lib/libopencv_imgcodecs.so.3.0.0 /usr/local/lib/libopencv_videoio.so.3.0.0 /usr/lib/x86_64-linux-gnu/libdc1394.so /usr/lib/x86_64-linux-gnu/libraw1394.so /usr/lib/x86_64-linux-gnu/libtinyxml2.so /usr/lib/x86_64-linux-gnu/libprotobuf.so -l-lpthread /usr/local/lib/libglog.so -lhal
+

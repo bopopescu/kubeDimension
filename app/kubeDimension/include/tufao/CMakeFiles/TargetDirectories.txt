@@ -1,0 +1,2 @@
+/src/app/find-object/include/tufao/CMakeFiles/uninstall.dir
+/src/app/find-object/include/tufao/src/CMakeFiles/tufao.dir

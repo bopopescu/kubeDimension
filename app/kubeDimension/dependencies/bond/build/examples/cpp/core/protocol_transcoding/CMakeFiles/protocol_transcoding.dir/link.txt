@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/protocol_transcoding.dir/protocol_transcoding.cpp.o CMakeFiles/protocol_transcoding.dir/protocol_transcoding_types.cpp.o  -o protocol_transcoding -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

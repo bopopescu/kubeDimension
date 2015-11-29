@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/src/app/find-object/dependencies/osrm-backend/util/mercator.cpp
+mercator.hpp
+/src/app/find-object/dependencies/osrm-backend/util/mercator.hpp
+cmath
+-
+
+/src/app/find-object/dependencies/osrm-backend/util/mercator.hpp
+

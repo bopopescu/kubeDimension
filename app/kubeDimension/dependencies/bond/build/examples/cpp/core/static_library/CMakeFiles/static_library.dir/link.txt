@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/static_library.dir/exe/static_library.cpp.o  -o static_library -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a libstatic_library_lib.a ../../../../cpp/libbond.a -lboost_system -lboost_thread 

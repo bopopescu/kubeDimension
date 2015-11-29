@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/trace.dir/trace.cpp.o  -o trace -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

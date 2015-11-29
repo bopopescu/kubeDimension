@@ -1,0 +1,11 @@
+#openssl pkg-config source file
+
+prefix=/src/app/find-object/dependencies/h2o/build/libressl-build
+exec_prefix=${prefix}
+libdir=/src/app/find-object/dependencies/h2o/build/libressl-build/lib
+includedir=${prefix}/include
+
+Name: LibreSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 2.2.4
+Requires: libssl libcrypto

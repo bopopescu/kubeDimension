@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//util/fingerprint.hpp
+boost/uuid/uuid.hpp
+-
+type_traits
+-
+
+..//util/osrm_exception.hpp
+exception
+-
+string
+-
+utility
+-
+
+/src/app/find-object/dependencies/osrm-backend/util/fingerprint.cpp
+util/fingerprint.hpp
+/src/app/find-object/dependencies/osrm-backend/util/util/fingerprint.hpp
+util/fingerprint_impl.hpp
+/src/app/find-object/dependencies/osrm-backend/util/util/fingerprint_impl.hpp
+
+util/fingerprint_impl.hpp
+util/osrm_exception.hpp
+util/util/osrm_exception.hpp
+boost/uuid/name_generator.hpp
+-
+boost/uuid/uuid_generators.hpp
+-
+cstring
+-
+algorithm
+-
+string
+-
+

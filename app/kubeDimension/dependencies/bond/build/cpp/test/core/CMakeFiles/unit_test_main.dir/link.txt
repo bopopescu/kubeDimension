@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunit_test_main.a  CMakeFiles/unit_test_main.dir/main.cpp.o
+/usr/bin/ranlib libunit_test_main.a

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/unit_test.dir/init.cpp.o  -o unit_test -rdynamic ../../libbond.a ../../libbond_apply.a -lboost_unit_test_framework libunit_test_main.a libunit_test_idl.a libunit_test_lib1.a libunit_test_lib2.a libunit_test_lib3.a libunit_test_lib4.a libunit_test_lib5.a libunit_test_lib6.a libunit_test_idl.a ../../libbond.a -lboost_system -lboost_thread 

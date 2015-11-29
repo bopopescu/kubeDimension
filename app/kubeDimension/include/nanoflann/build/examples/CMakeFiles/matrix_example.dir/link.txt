@@ -1,0 +1,1 @@
+/usr/bin/c++    -O2 -mtune=native -Wall -pedantic   CMakeFiles/matrix_example.dir/matrix_example.cpp.o  -o ../bin/matrix_example -rdynamic 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/time_alias.dir/time_alias_types.cpp.o CMakeFiles/time_alias.dir/time_alias.cpp.o  -o time_alias -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_date_time -lboost_system -lboost_thread 

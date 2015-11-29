@@ -1,0 +1,2 @@
+/src/app/find-object/dependencies/dlib/dlib/build/CMakeFiles/dlib-shared.dir
+/src/app/find-object/dependencies/dlib/dlib/build/CMakeFiles/dlib.dir

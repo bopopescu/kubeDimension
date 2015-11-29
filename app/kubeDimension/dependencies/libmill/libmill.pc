@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libmill
+Description: Go-style concurrency in C
+URL: http://libmill.org/
+Version: @LIBMILL_ABI_VERSION@
+Requires:
+Libs: -L${libdir} -lmill -lanl -lrt 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtNetwork
+-I/usr/include/qt4/QtCore
+-DBUFFER_SIZE=128
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_NETWORK_LIB
+-DQT_CORE_LIB
+-DTUFAO_LIBRARY
+-DQT_VERSION_MAJOR=4
+-DQT_VERSION_MINOR=8
+-DQT_VERSION_PATCH=6
+-o
+/src/app/find-object/include/tufao/src/moc_sessionstore.cxx
+/src/app/find-object/include/tufao/src/sessionstore.h

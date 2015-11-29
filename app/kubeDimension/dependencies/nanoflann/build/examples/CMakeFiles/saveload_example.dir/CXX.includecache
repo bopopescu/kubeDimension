@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/nanoflann.hpp
+vector
+-
+cassert
+-
+algorithm
+-
+stdexcept
+-
+cstdio
+-
+cmath
+-
+limits
+-
+
+/src/app/find-object/dependencies/nanoflann/examples/saveload_example.cpp
+nanoflann.hpp
+-
+cstdlib
+-
+iostream
+-
+

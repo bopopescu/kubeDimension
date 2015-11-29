@@ -1,0 +1,16 @@
+/usr/local/include/osrm/json_container.hpp
+/usr/local/include/osrm/route_parameters.hpp
+/usr/local/include/osrm/libosrm_config.hpp
+/usr/local/include/osrm/server_paths.hpp
+/usr/local/include/osrm/coordinate.hpp
+/usr/local/include/osrm/osrm.hpp
+/usr/local/include/variant/optional.hpp
+/usr/local/include/variant/variant.hpp
+/usr/local/include/variant/variant_io.hpp
+/usr/local/include/variant/recursive_wrapper.hpp
+/usr/local/bin/osrm-extract
+/usr/local/bin/osrm-prepare
+/usr/local/bin/osrm-datastore
+/usr/local/bin/osrm-routed
+/usr/local/lib/libOSRM.a
+/usr/local/lib/pkgconfig/libosrm.pc

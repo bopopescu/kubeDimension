@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/attributes.dir/attributes.cpp.o CMakeFiles/attributes.dir/attributes_types.cpp.o  -o attributes -rdynamic ../../../../cpp/libbond.a ../../../../cpp/libbond_apply.a -lboost_system -lboost_thread 

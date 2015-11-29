@@ -1,0 +1,8 @@
+libmill_la-list.lo: list.c /usr/include/stdc-predef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h list.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+
+list.h:

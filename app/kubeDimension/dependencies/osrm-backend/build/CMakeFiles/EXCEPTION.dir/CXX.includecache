@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/src/app/find-object/dependencies/osrm-backend/util/osrm_exception.cpp
+osrm_exception.hpp
+/src/app/find-object/dependencies/osrm-backend/util/osrm_exception.hpp
+
+/src/app/find-object/dependencies/osrm-backend/util/osrm_exception.hpp
+exception
+-
+string
+-
+utility
+-
+

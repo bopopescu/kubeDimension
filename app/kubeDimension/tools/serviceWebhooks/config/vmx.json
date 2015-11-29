@@ -1,0 +1,15 @@
+{
+    "scripts": [
+        {
+            "command": "/src/app/find-object/bin/find_object-tcpRequest",
+            "args": [
+                "--out",
+                "34993",
+                "--in",
+                "39412",
+                "--scene",
+                "/src/app/rest/products/9.png"
+            ]
+        }
+    ]
+}

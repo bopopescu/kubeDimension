@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "compat_reflection.h"
+  "compat_types.h"
+  "compat_types.cpp"
+  "compat_apply.h"
+  "compat_apply.cpp"
+  "compat2_reflection.h"
+  "compat2_types.h"
+  "compat2_types.cpp"
+  "compat2_apply.h"
+  "compat2_apply.cpp"
+  "compat_no_generics_reflection.h"
+  "compat_no_generics_types.h"
+  "compat_no_generics_types.cpp"
+  "compat_no_generics_apply.h"
+  "compat_no_generics_apply.cpp"
+  "compat_common_reflection.h"
+  "compat_common_types.h"
+  "compat_common_types.cpp"
+  "compat_common_apply.h"
+  "compat_common_apply.cpp"
+  "cmd_arg_reflection.h"
+  "cmd_arg_types.h"
+  "cmd_arg_types.cpp"
+  "cmd_arg_apply.h"
+  "cmd_arg_apply.cpp"
+  "CMakeFiles/compatibility_test.dir/compat.cpp.o"
+  "CMakeFiles/compatibility_test.dir/serialization.cpp.o"
+  "CMakeFiles/compatibility_test.dir/compat_types.cpp.o"
+  "CMakeFiles/compatibility_test.dir/compat2_types.cpp.o"
+  "CMakeFiles/compatibility_test.dir/compat_no_generics_types.cpp.o"
+  "CMakeFiles/compatibility_test.dir/compat_common_types.cpp.o"
+  "CMakeFiles/compatibility_test.dir/cmd_arg_types.cpp.o"
+  "compatibility_test.pdb"
+  "compatibility_test"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/compatibility_test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

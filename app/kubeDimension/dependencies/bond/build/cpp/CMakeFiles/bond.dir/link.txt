@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbond.a  CMakeFiles/bond.dir/generated/bond/core/bond_types.cpp.o CMakeFiles/bond.dir/generated/bond/core/bond_const_types.cpp.o
+/usr/bin/ranlib libbond.a

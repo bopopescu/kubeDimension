@@ -1,4 +1,6 @@
-flann.cpp.o
+*flann.cpp.o
+app/kubeDimension/src/*/build
+app/kubeDimension/dependencies/*/build
 *.tar.gz
 *libflann_s.a
 tempVoc.yaml.gz

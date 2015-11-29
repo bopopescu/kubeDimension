@@ -32,6 +32,27 @@ ADD_DEFINITIONS(-DPROJECT_NAME="${PROJECT_NAME}")
 FIND_PACKAGE(OpenCV 3 REQUIRED) # tested on 2.3.1
 FIND_PACKAGE(Qt4 COMPONENTS QtDBus QtXml QtCore QtGui QtNetwork REQUIRED)
 
+cmake_minimum_required(VERSION 2.8.8)
+project(catch_builder CXX)
+include(ExternalProject)
+find_package(Git REQUIRED)
+
+ExternalProject_Add(
+    catch
+    PREFIX ${CMAKE_BINARY_DIR}/catch
+    GIT_REPOSITORY https://github.com/philsquared/Catch.git
+    TIMEOUT 10
+    UPDATE_COMMAND ${GIT_EXECUTABLE} pull
+    CONFIGURE_COMMAND ""
+    BUILD_COMMAND ""
+    INSTALL_COMMAND ""
+    LOG_DOWNLOAD ON
+   )
+
+# Expose required variable (CATCH_INCLUDE_DIR) to parent scope
+ExternalProject_Get_Property(catch source_dir)
+set(CATCH_INCLUDE_DIR ${source_dir}/include CACHE INTERNAL "Path to include folder for Catch")
+
 find_package(Tufao REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)

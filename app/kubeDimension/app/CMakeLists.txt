@@ -5,7 +5,11 @@ ADD_DEFINITIONS(
     -DBOND_COMPACT_BINARY_PROTOCOL
 )
 
-find_package(Tufao REQUIRED)
+set(Boost_USE_STATIC_LIBS ON) 
+set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME OFF) 
+
+find_package(Tufao 0.4 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(NanoMsg REQUIRED)
@@ -14,17 +18,16 @@ find_package(HDF5 REQUIRED)
 find_package(Redis REQUIRED)
 
 INCLUDE(${QT_USE_FILE})
-find_package(Boost 1.36.0)
 find_package(Tufao)
+find_package(Boost COMPONENTS thread filesystem system)
 
 SET(INCLUDE_DIRS
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
         ${CMAKE_CURRENT_SOURCE_DIR}
-	/usr/share/qt4/mkspecs/linux-g++-64/
         ${OpenCV_INCLUDE_DIRS}
-        /usr/local/include/Tufao/
-        ${TUFAO_LIBRARY}
+        ${TUFAO_INCLUDE_DIR}
 	${TBB_INCLUDE_DIRS}
+	${Boost_LIBRARY_DIRS}
         ${NANOMSG_INCLUDE_DIR}
         ${ZEROMQ_INCLUDE_DIRS}
 	${HDF5_INCLUDE_DIRS}
@@ -33,13 +36,14 @@ SET(INCLUDE_DIRS
 
 SET(LIBRARIES
     ${QT_LIBRARIES} 
-    ${TUFAO_LIBRARY}
+    ${TUFAO_LIBRARIES}
     ${HIREDIS_LIBRARIES}
     ${OpenCV_LIBS} 
     ${TBB_LIBRARIES}
     ${NANOMSG_LIBRARY}
     ${ZEROMQ_LIBRARIES}
     ${HDF5_LIBRARIES}
+    ${Boost_LIBRARIES}
 )
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -std=c++1y -Wreorder ")
@@ -59,7 +63,18 @@ ELSE()
 ENDIF()
 
 # Linking with Qt libraries
-TARGET_LINK_LIBRARIES(find_object_app find_object ${LIBRARIES} ${TUFAO_LIBRARIES})
+TARGET_LINK_LIBRARIES(find_object_app find_object ${LIBRARIES} ${TUFAO_LIBRARIES}     ${QT_LIBRARIES}
+    ${TUFAO_LIBRARIES}
+    ${HIREDIS_LIBRARIES}
+    ${OpenCV_LIBS}
+    ${TBB_LIBRARIES}
+    ${Boost_FILESYSTEM_LIBRARY}
+    ${Boost_THREAD_LIBRARY}
+    ${Boost_SYSTEM_LIBRARY}
+    ${NANOMSG_LIBRARY}
+    ${ZEROMQ_LIBRARIES}
+    ${Boost_LIBRARIES}
+    ${HDF5_LIBRARIES} )
 
 IF(APPLE AND BUILD_AS_BUNDLE)
   SET_TARGET_PROPERTIES(find_object_app PROPERTIES
@@ -75,15 +90,14 @@ ENDIF()
 #---------------------------
 # Installation stuff
 #--------------------------- 
-find_package(Boost COMPONENTS thread filesystem system)
 
-TARGET_LINK_LIBRARIES(find_object_app find_object ${LIBRARIES} ${Boost_LIBRARIES}
-    ${Boost_FILESYSTEM_LIBRARY}
-    ${TUFAO_LIBRARY}
-    ${Boost_THREAD_LIBRARY}
-    ${Boost_SYSTEM_LIBRARY}
-    ${TUFA0_LIBRARIES}
-)
+#TARGET_LINK_LIBRARIES(find_object_app find_object ${LIBRARIES} ${Boost_LIBRARIES}
+#    ${Boost_FILESYSTEM_LIBRARY}
+#    ${TUFAO_LIBRARY}
+#    ${Boost_THREAD_LIBRARY}
+#    ${Boost_SYSTEM_LIBRARY}
+#    ${TUFA0_LIBRARIES}
+#)
 
 INSTALL(TARGETS find_object_app
         RUNTIME DESTINATION "${INSTALL_BIN_DIR}" COMPONENT runtime

@@ -3,12 +3,10 @@ ADD_DEFINITIONS(
     # Other flags
     -pthread -fdiagnostics-color=auto -fmax-errors=1 -std=c++14 -O2 -g -fno-omit-frame-pointer -fno-inline
     -DBOND_COMPACT_BINARY_PROTOCOL
+    -lssl -lcrypto
 )
 
-set(Boost_USE_STATIC_LIBS ON) 
 set(Boost_USE_MULTITHREADED ON)  
-set(Boost_USE_STATIC_RUNTIME OFF) 
-
 find_package(Tufao 0.4 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)
@@ -16,14 +14,14 @@ find_package(NanoMsg REQUIRED)
 find_package(ZeroMQ REQUIRED)
 find_package(HDF5 REQUIRED)
 find_package(Redis REQUIRED)
-
+find_package(cpprest REQUIRED)
+  find_package(Crypto REQUIRED)
+  find_package(OpenSSL 1.0.0 REQUIRED)
 INCLUDE(${QT_USE_FILE})
-find_package(Tufao)
-find_package(Boost COMPONENTS thread filesystem system)
-
 SET(INCLUDE_DIRS
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
         ${CMAKE_CURRENT_SOURCE_DIR}
+	${cpprest_LIB_DIR}
         ${OpenCV_INCLUDE_DIRS}
         ${TUFAO_INCLUDE_DIR}
 	${TBB_INCLUDE_DIRS}
@@ -44,6 +42,7 @@ SET(LIBRARIES
     ${ZEROMQ_LIBRARIES}
     ${HDF5_LIBRARIES}
     ${Boost_LIBRARIES}
+    ${cpprest_LIBRARIES}
 )
 
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -std=c++1y -Wreorder ")
@@ -63,7 +62,9 @@ ELSE()
 ENDIF()
 
 # Linking with Qt libraries
-TARGET_LINK_LIBRARIES(find_object_app find_object ${LIBRARIES} ${TUFAO_LIBRARIES}     ${QT_LIBRARIES}
+TARGET_LINK_LIBRARIES(find_object_app find_object ${SSL_LIB} ${CRYPTO_LIB}  ${LIBRARIES} 
+    ${OPENSSL_LIBRARIES}
+    ${QT_LIBRARIES}
     ${TUFAO_LIBRARIES}
     ${HIREDIS_LIBRARIES}
     ${OpenCV_LIBS}

@@ -1,0 +1,8 @@
+-I/usr/local/include
+-DPROJECT_PREFIX="find_object"
+-DPROJECT_VERSION="0.6.0"
+-DPROJECT_NAME="Find-Object"
+-DQT_NO_KEYWORDS
+-o
+/src/app/kubeDimension/bin/src/__/include/find_object/moc_Worker.cxx
+/src/app/kubeDimension/include/find_object/Worker.h

@@ -1,0 +1,608 @@
+Start testing: Nov 29 23:57 UTC
+----------------------------------------------------------
+1/20 Testing: cpp-netlib-message_test
+1/20 Test: cpp-netlib-message_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-message_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test
+"cpp-netlib-message_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 42 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-message_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-message_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/20 Testing: cpp-netlib-message_transform_test
+2/20 Test: cpp-netlib-message_transform_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-message_transform_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test
+"cpp-netlib-message_transform_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 2 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-message_transform_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-message_transform_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/20 Testing: cpp-netlib-utils_thread_pool
+3/20 Test: cpp-netlib-utils_thread_pool
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-utils_thread_pool"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test
+"cpp-netlib-utils_thread_pool" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 2 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-utils_thread_pool" end time: Nov 29 23:57 UTC
+"cpp-netlib-utils_thread_pool" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/20 Testing: cpp-netlib-uri_test
+4/20 Test: cpp-netlib-uri_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-uri_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/uri
+"cpp-netlib-uri_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 72 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-uri_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-uri_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/20 Testing: cpp-netlib-uri_builder_test
+5/20 Test: cpp-netlib-uri_builder_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-uri_builder_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/uri
+"cpp-netlib-uri_builder_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 11 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-uri_builder_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-uri_builder_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/20 Testing: cpp-netlib-uri_builder_stream_test
+6/20 Test: cpp-netlib-uri_builder_stream_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-uri_builder_stream_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/uri
+"cpp-netlib-uri_builder_stream_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 12 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-uri_builder_stream_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-uri_builder_stream_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/20 Testing: cpp-netlib-uri_encoding_test
+7/20 Test: cpp-netlib-uri_encoding_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-uri_encoding_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/uri
+"cpp-netlib-uri_encoding_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 4 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-uri_encoding_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-uri_encoding_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/20 Testing: cpp-netlib-relative_uri_test
+8/20 Test: cpp-netlib-relative_uri_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-relative_uri_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/uri
+"cpp-netlib-relative_uri_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 1 test case...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-relative_uri_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-relative_uri_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/20 Testing: cpp-netlib-http-response_incremental_parser_test
+9/20 Test: cpp-netlib-http-response_incremental_parser_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-response_incremental_parser_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-response_incremental_parser_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 8 test cases...
+PARSED: HTTP/1.0  state=9
+PARSED: HTTP/1.1  state=9
+PARSED: HTTP state=4
+PARSED: HTTP/0.9  state=9
+PARSED: 200  state=11
+PARSED: 200 state=10
+PARSED: 200 state=11
+PARSED: 200  state=11
+PARSED: 200 state=10
+PARSED: 200 state=11
+PARSED: OK
+ state=14
+PARSED: OK
+ state=14
+PARSED: Internal Server Error
+ state=14
+PARSED: 
+ state=14
+PARSED: ÌïúÍ∏ÄÎ©îÏãúÏßÄ
+ state=14
+PARSED: OK
+ state=14
+PARSED: OK
+ state=14
+PARSED: Internal Server Error
+ state=14
+PARSED: 
+ state=14
+PARSED: ÌïúÍ∏ÄÎ©îÏãúÏßÄ
+ state=14
+PARSED: Server: Foo
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED:  Server: Foo
+ state=19
+PARSED:  Content-Type: application/json
+ state=19
+PARSED: _Server: Foo
+ state=19
+PARSED: _Content-Type: application/json
+ state=19
+PARSED: Server: 
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED: Server: ÏÑúÎ≤Ñ
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED: Content-Type: text/html;
+ state=19
+PARSED: charset=utf-8
+ state=19
+PARSED: Server: Foo
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED:  Server: Foo
+ state=19
+PARSED:  Content-Type: application/json
+ state=19
+PARSED: _Server: Foo
+ state=19
+PARSED: _Content-Type: application/json
+ state=19
+PARSED: Server: 
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED: Server: ÏÑúÎ≤Ñ
+ state=19
+PARSED: Content-Type: application/json
+ state=19
+PARSED: Content-Type: text/html;
+ state=19
+PARSED: charset=utf-8
+ state=19
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-response_incremental_parser_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-response_incremental_parser_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/20 Testing: cpp-netlib-http-request_incremental_parser_test
+10/20 Test: cpp-netlib-http-request_incremental_parser_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-request_incremental_parser_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-request_incremental_parser_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 5 test cases...
+PARSED: GET  [state:2] 
+PARSED: g [state:0] 
+PARSED: GET /  [state:4] 
+PARSED: GET /	 [state:3] 
+PARSED: GET / HTTP/1.1
+ [state:14] 
+PARSED: GET / HTTP  [state:8] 
+PARSED: GET / HTTP/1.1
+Host: cpp-netlib.org
+
+ [state:21] 
+PARSED: GET / HTTP/1.1
+Host: cpp-netlib.org
+Connection: close
+
+ [state:21] 
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-request_incremental_parser_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-request_incremental_parser_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/20 Testing: cpp-netlib-http-request_linearize_test
+11/20 Test: cpp-netlib-http-request_linearize_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-request_linearize_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-request_linearize_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 8 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-request_linearize_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-request_linearize_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/20 Testing: cpp-netlib-http-client_constructor_test
+12/20 Test: cpp-netlib-http-client_constructor_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-client_constructor_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-client_constructor_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 24 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-client_constructor_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-client_constructor_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/20 Testing: cpp-netlib-http-client_get_test
+13/20 Test: cpp-netlib-http-client_get_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-client_get_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-client_get_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 36 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   7.48 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-client_get_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-client_get_test" time elapsed: 00:00:07
+----------------------------------------------------------
+
+14/20 Testing: cpp-netlib-http-client_get_different_port_test
+14/20 Test: cpp-netlib-http-client_get_different_port_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-client_get_different_port_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-client_get_different_port_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 12 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   4.12 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-client_get_different_port_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-client_get_different_port_test" time elapsed: 00:00:04
+----------------------------------------------------------
+
+15/20 Testing: cpp-netlib-http-client_get_timeout_test
+15/20 Test: cpp-netlib-http-client_get_timeout_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-client_get_timeout_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-client_get_timeout_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+127.0.0.1 - - [29/Nov/2015 23:57:47] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:47] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:47] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:47] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:47] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.0" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+127.0.0.1 - - [29/Nov/2015 23:57:50] "GET /cgi-bin/sleep.py?3 HTTP/1.1" 200 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03f]\xd2\xf5\xf6\xbe\xf5zt\x7f\xb8\xfe|\xb8c2')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+f]“ıˆæızt∏˛|∏c2 ET" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03nq\x02\x93')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+nqì" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xde\xf3\xc1\x1c!e\x14\xbe\xa6\xac^\x03')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+ﬁÛ¡!eæ¶¨^ÚÂ∂@ö=ê††“Äå+õ:úz
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xe7')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+Á®°Ãæpzä≤X8E≥ «”û`‰Ü" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request version ('\x02\x94\xcc\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+©=&àÁÂZaµ∫c®ÖèK.’ …ód®˙÷	îÃ
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xd7')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+◊8∫1ËŒéOC!È’∫;_EùzÁCwí@‘
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03;\xcc\xa1\xe1O\xc1\x8al\x08M\x9d\xddE\xbb\x08J\x83\x87q;\x8dkp\xbc\xf8\xc0!\x8f<\xd6\xe5\xae\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+;Ã°·O¡älMù›EªJÉáq;çkpº¯¿!è<÷ÂÆ
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xf6\\\x94')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+ˆ\î˜Ì«=LVıæ*±º¥£Ãª⁄‘Ñ∑MtLF„·
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xb0\xc8!\xd1\x04"\xa4=\xd14D\xa8\xdc\x9e\xb5\x01\xf7\xd4\x1d\xfa\x99\x92\x93k\x83\xfa\xaa\xd3\xcb\x1c\xa2S\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+∞»!—"§=—4D®‹ûµ˜‘˙ôíìkÉ˙™”À¢S
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03z\x8b\xf9[\xa7\x90\xdd\xfe\x8d')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+zã˘[ßê›˛ç /Ù¯¨∑˚/>4¶ÒæˇH‹=ñ«M" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xe9\xad\xb5\xda\x7f\xe9\x0f|\x12g\x11\xa2\x04\x93oJ\x05\xae?:\x93\x1d\xbeg1\x05LBG=\x8f\xcb\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+È≠µ⁄È|g¢ìoJÆ?:ìæg1LBG=èÀ
+
+à¿0¿,¿(¿$¿¿" 400 -
+127.0.0.1 - - [29/Nov/2015 23:57:53] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03b\x17]zy\xf0{JT6\xcd\xbc\xbe\\\xdf\x8dT\xa9\xe3\xf4\xb8\xeb\xde"DC\x1bY\x9d\xe3\xd7}\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+127.0.0.1 - - [29/Nov/2015 23:57:53] ""
+b]zy{JT6Õºæ\ﬂçT©„Ù∏Îﬁ"DCYù„◊}
+
+à¿0¿,¿(¿$¿¿" 400 -
+Running 36 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   7.26 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-client_get_timeout_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-client_get_timeout_test" time elapsed: 00:00:07
+----------------------------------------------------------
+
+16/20 Testing: cpp-netlib-http-client_get_streaming_test
+16/20 Test: cpp-netlib-http-client_get_streaming_test
+Command: "/src/app/kubeDimension/include/cpp-netlib-0.11.2-final/tests/cpp-netlib-http-client_get_streaming_test"
+Directory: /src/app/kubeDimension/include/cpp-netlib-0.11.2-final/libs/network/test/http
+"cpp-netlib-http-client_get_streaming_test" start time: Nov 29 23:57 UTC
+Output:
+----------------------------------------------------------
+Running 4 test cases...
+
+*** No errors detected
+<end of output>
+Test time =   1.76 sec
+----------------------------------------------------------
+Test Passed.
+"cpp-netlib-http-client_get_streaming_test" end time: Nov 29 23:57 UTC
+"cpp-netlib-http-client_get_streaming_test" time elapsed: 00:00:01
+----------------------------------------------------------
+

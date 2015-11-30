@@ -258,12 +258,61 @@ class FINDOBJECT_EXP Settings
 	PARAMETER(General, threads, int, 1, "Number of threads used for objects matching and homography computation. 0 means as many threads as objects. On InvertedSearch mode, multi-threading has only effect on homography computation.");
 	PARAMETER(General, multiDetection, bool, false, "Multiple detection of the same object.");
 	PARAMETER(General, multiDetectionRadius, int, 30, "Ignore detection of the same object in X pixels radius of the previous detections.");
-	PARAMETER(General, port, int, 0, "Port on objects detected are published. If port=0, a port is chosen automatically.")
+	PARAMETER(General, port, int, 0, "Port on objects detected are published. If port=0, a port is chosen automatically.");
+
+	// Storage services (Flann vocabularies, OpenCV Yaml dumps)
+
+	// Connect to the redis store
+	PARAMETER(General, RedisHostName, QString, "localhost", "Hostname to connect to the Redis key/Value store. Default is localhost.");
+	PARAMETER(General, RedisPort, int, 6379, "Port to connect to the Redis key/Value store. Default port for redis is usually, 6379.");
+
+	// Connect to the mongodb collection
+	PARAMETER(General, MongoDbHostName, QString, "localhost", "Hostname to connect to MongoDB collection. Default is localhost.");
+	PARAMETER(General, MongoDbPort, int, 27017, "Port to connect to Redis key/Value store. Default port for redis is usually, 27017.");
+	PARAMETER(General, MongoDbUsername, QString, "username-mongo", "Remote MongoDb username.");
+	PARAMETER(General, MongoDbPassword, QString, "password-mongo", "Remote MongoDb username's password.");
+
+	// Connect to the MySQL database
+	PARAMETER(General, MySQLHostName, QString, "localhost", "Hostname to connect to remote/local MySQL database. Default is localhost.");
+	PARAMETER(General, MySQLPort, int, 3306, "Port to connect to the remote/local MySQL database. Default port for redis is usually, 3306.");
+	PARAMETER(General, MySQLUsername, QString, "username-mysql", "Remote MySQL username.");
+	PARAMETER(General, MySQLPassword, QString, "password-mysql", "Remote MySQL username's password.");
 
 	// Auto-Scaling the find-object vocabulary (Need to find some examples, QT_TCPSOCKET and THREADS)
 	PARAMETER(General, autoScale, bool, true, "Spawn more workers and copies the vocabulary to accept more request per seconds.");
 	PARAMETER(General, minWorkers, int, 1, "Minimum number of workers to be spawned.");
 	PARAMETER(General, maxWorkers, int, 5, "Maximum number of workers to be spawned.");
+
+	// Connect to the etcd2 key/value store
+	PARAMETER(General, Etcd2HostName, QString, "localhost", "Hostname to connect to Etcd2 Key/Value store. Default is localhost.");
+	PARAMETER(General, Etcd2Port, int, 4001, "Port to connect to Etcd2 Key/Value store. Default port for redis is usually, 4001.");
+
+	// Connect to the sphinx search full text engine (used for some data enrichement after visual matching of a named entity)
+	PARAMETER(General, SphxSearchHostName, QString, "localhost", "Hostname to connect to SphinxSearch Full-Text Search Engine. Default is localhost.");
+	PARAMETER(General, SphxSearchPort, int, 9312, "Port to connect to SphinxSearch Full-Text Search Engine. Default port is usually, 9312.");
+	PARAMETER(General, SphxSearchIdx, QString, "*", "<IDX>\tsearch through index(es) specified by IDX, by default all indexes started.");	
+	PARAMETER(General, SphxSearchSortBy, QString, "date", "<CLAUSE>\tsort matches by 'CLAUSE' in sort_extended mode.");
+	PARAMETER(General, SphxSearchSortExpr, QString, "desc", "<EXPR>\tsort matches by 'EXPR' DESC in sort_expr mode.");
+	PARAMETER(General, SphxSearchAny, bool, false, "\t\tuse 'match any word' matching mode.");
+	PARAMETER(General, SphxSearchBoolean, bool, false, "\t\tuse 'boolean query' matching mode.");
+	PARAMETER(General, SphxSearchExtend, bool, true, "\t\tuse 'extended query' matching mode.");
+	PARAMETER(General, SphxSearchPhrase, bool, false, "\t\tuse 'exact phrase' matching mode.");
+	PARAMETER(General, SphxSearchFilter, QString, "group_id", "<ATTR>\tfilter by attribute 'ATTR' (default is 'group_id').");
+	PARAMETER(General, SphxSearchFilterArrange, QString, "", "<ATTR> <MIN> <MAX>\t\t\tadd specified range filter.");
+	PARAMETER(General, SphxSearchFilterValue, QString, "1,2", "<VAL>\tadd VAL to allowed 'group_id' values list.");
+	PARAMETER(General, SphxSearchGroupBy, QString, "date,rank", "<EXPR>\tgroup matches by 'EXPR'.");
+	PARAMETER(General, SphxSearchGroupSort, QString, "year,week", "<EXPR>\tsort groups by 'EXPR'.");
+	PARAMETER(General, SphxSearchDistinct, QString, "namedEntity", "<ATTR>\tcount distinct values of 'ATTR'.");
+	PARAMETER(General, SphxSearchLimit, int, 10, "<COUNT>\tretrieve COUNT matches (default: 10).");
+
+	/* To Do */
+	// Hadoop
+
+	// Apache Spark
+
+	// Apache StormCV
+
+	// Amazon S3 Bucket
 
 	// Dsitributed Search with NanoMSG and Bond (Inspired from: https://daniel-j-h.github.io/post/distributed-search-nanomsg-bond/)
 	PARAMETER(General, distributedSearch, bool, false, "Activate the distributed search feature to query same configuration vocabularies.");

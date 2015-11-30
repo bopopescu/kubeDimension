@@ -1,3 +1,4 @@
+
 SET(headers_ui 
    ../include/${PROJECT_PREFIX}/FindObject.h
    ../include/${PROJECT_PREFIX}/Common.h
@@ -18,6 +19,10 @@ QT4_WRAP_CPP(moc_srcs ${headers_ui})
 
 SET(SRC_FILES 
    ../include/${PROJECT_PREFIX}/NanoFlann.hpp   
+   ./EtcdCppApi/tst/Catch.hpp
+   ./EtcdCppApi/etcd/Client.hpp
+   ./EtcdCppApi/etcd/Response.hpp
+   ./EtcdCppApi/etcd/Value.hpp
    ./JsonQt.cpp
    ./QtOpenCV.cpp
    ./Settings.cpp
@@ -42,21 +47,20 @@ SET(SRC_FILES
 )
 
 INCLUDE(${QT_USE_FILE})
-find_package(Boost 1.5 REQUIRED COMPONENTS system filesystem)
-find_package(Tufao REQUIRED)
-#include_directories("${TUFAO_INCLUDE_DIR} ${INCLUDE_DIRS}")
-
+find_package(OpenSSL 1.0.0 REQUIRED)
+find_package(Tufao 0.4 REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(NanoMsg REQUIRED)
 find_package(ZeroMQ REQUIRED)
 find_package(HDF5 REQUIRED)
 find_package(Redis REQUIRED)
-
+find_package(cpprest REQUIRED)
 INCLUDE(${QT_USE_FILE})
-find_package(Boost 1.5 REQUIRED)
 
 SET(INCLUDE_DIRS
+	${cpprest_LIB_DIR}
         ${OpenCV_INCLUDE_DIRS}
         ${TBB_INCLUDE_DIRS}
         ${NANOMSG_INCLUDE_DIR}
@@ -66,14 +70,17 @@ SET(INCLUDE_DIRS
    ${CMAKE_CURRENT_SOURCE_DIR}/../include
    ${CMAKE_CURRENT_SOURCE_DIR}/../include/tbb
    ${CMAKE_CURRENT_SOURCE_DIR}/../include/nanomsg
-   /usr/share/qt4/mkspecs/linux-g++-64/
    ${CMAKE_CURRENT_SOURCE_DIR}
    ${OpenCV_INCLUDE_DIRS}
    ${Boost_INCLUDE_DIRS}
    ${CMAKE_CURRENT_BINARY_DIR} # for qt ui generated in binary dir
 )
 
+include_directories("${TUFAO_INCLUDE_DIR} ${INCLUDE_DIRS}")
+
 SET(LIBRARIES
+${SSL_LIB} ${CRYPTO_LIB}
+    ${cpprest_LIBRARIES}
     ${QT_LIBRARIES}
     ${HIREDIS_LIBRARIES}
     ${OpenCV_LIBS}
@@ -81,6 +88,7 @@ SET(LIBRARIES
     ${NANOMSG_LIBRARY}
     ${ZEROMQ_LIBRARIES}
     ${HDF5_LIBRARIES}
+    ${Boost_LIBRARIES}
 )
 
 #SET(LIBRARIES
@@ -93,7 +101,7 @@ SET(LIBRARIES
 INCLUDE_DIRECTORIES(${INCLUDE_DIRS})
 
 # create a library from the source files
-ADD_LIBRARY(find_object ${SRC_FILES} ${Boost_LIBRARY_DIRS})
+ADD_LIBRARY(find_object ${SRC_FILES})
 
 # Linking with Qt libraries
 TARGET_LINK_LIBRARIES(find_object ${LIBRARIES})

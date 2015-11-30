@@ -50,6 +50,9 @@
 #include <QtCore/QTimer>
 #include "find_object/RedisQt.h"
 
+// Etcd 2.0 [Required for the kubeProxy backends/frontends mapping]
+#include "etcd/Client.hpp"
+
 bool running = true;
 
 #ifdef WIN32
@@ -183,40 +186,21 @@ string getFileSize(string path) {
     return convertSize(size);
 }
 
-/*
-static void onInteraction(Common::RequestHandler);
-
-static void onInteraction(Common::RequestHandler handler) {
-	std::string request;
-	do {
-		if (!request.empty()) {
-		  const auto responses = handler(request);
-
-	  std::cout << "\nResults>\n";
-	  for (auto&& resp : responses)
-	    std::cout << " * " << resp << '\n';
-	}
-		std::cout << "\nSearch>" << std::endl;
-	} while (std::getline(std::cin, request));
-}
-*/
-
 void getCallback(redisAsyncContext *, void * r, void * privdata) {
 
     redisReply * reply = static_cast<redisReply *>(r);
     QtRedis * ex = static_cast<QtRedis *>(privdata);
     if (reply == nullptr || ex == nullptr) return;
-    // to change for UINFO messaging
-    cout << "key: " << reply->str << endl;
+	UINFO("key=\"%s\"",  reply->str);
     ex->finish();
 }
 
 void QtRedis::run() {
 
-    m_ctx = redisAsyncConnect("localhost", 6379);
+    m_ctx = redisAsyncConnect(find_object::Settings::kGeneral_RedisHostName().toStdString().c_str(), find_object::Settings::kGeneral_RedisPort().toInt());
 
     if (m_ctx->err) {
-        cerr << "Error: " << m_ctx->errstr << endl;
+	UERROR("Error with the Redis store communication: \"%s\"",  m_ctx->errstr);
         redisAsyncFree(m_ctx);
         Q_EMIT finished();
     }
@@ -242,7 +226,7 @@ int main(int argc, char* argv[])
 	QString sessionPath = "";
 	bool sessionNew = false;
 	bool recursive = false;
-	bool keepImagesInRAM = false;
+	bool keepImagesInRAM = true;
 	bool distributedSearch = false;
 	int shards = 1;
 	int replicas = 1;
@@ -702,16 +686,38 @@ int main(int argc, char* argv[])
 	#endif
 	#endif
 
+	// Which version of OpenCv was compiled ?
+	#ifdef CV_MAJOR_VERSION
+	    UINFO("OpenCV currently running: %d", CV_MAJOR_VERSION);
+	#endif
+
+	// Are XFeatures2D modules compiled with OpenCV 3.0 ?
+	#ifdef HAVE_OPENCV_XFEATURES2D
+	    UINFO("XFEATURES2D Loaded");
+	#endif
+
+	// Are SIFT and all the other NON-FREE modules compiled with OpenCV 3.0 ?
+	#ifdef FINDOBJECT_NONFREE
+	    UINFO("Non-Free OpenCV modules Loaded");
+	#endif
+
+
+	// Check Redis (Store various Meta Data to enrich instantly the matches; socialbakers)
+
+	// Check ETCD (for KubeProxy)
+
+	// Check ETCD (for KubeProxy)
+
 	// Accelrate TCP based exchanges
-//	QEventDispatcherEpoll epollDispatcher;
+	// QEventDispatcherEpoll epollDispatcher;
 	QCoreApplication app(argc, argv);
 
 	// Store some key/values into HiRedis
-    QtRedis rstorage(argv[argc-1]);
+    //QtRedis rstorage(argv[argc-1]);
 
     // Connect SLOTS and SIGNALS with the REDIS STORE
-    QObject::connect(&rstorage, SIGNAL(finished()), &app, SLOT(quit()));
-    QTimer::singleShot(0, &rstorage, SLOT(run()));
+    //QObject::connect(&rstorage, SIGNAL(finished()), &app, SLOT(quit()));
+    //QTimer::singleShot(0, &rstorage, SLOT(run()));
 
 	/*
 	if(!scene.empty())
@@ -815,10 +821,6 @@ int main(int argc, char* argv[])
 		}
 
 		delete findObject;
-
-	} else {
-
-		delete findObject;		
 
 	}
 

@@ -28,6 +28,9 @@
 #include <QtCore/QTimer>
 #include "find_object/RedisQt.h"
 
+// Etcd 2.0 [Required for the kubeProxy backends/frontends mapping]
+//#include "etcd/Client.hpp"
+
 bool running = true;
 using namespace std;
 

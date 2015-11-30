@@ -23,13 +23,6 @@
 #include <opencv2/cudafeatures2d.hpp>
 #endif
 #endif
-#include <hdf5.h>
-#include <flann/io/hdf5.h>
-#include <flann/flann.hpp>
-#include <boost/filesystem.hpp>
-#include "find_object/NanoFlann.hpp"
-//#include "find_object/Annoy.h"
-//#include "find_object/Mman.h"
 
 namespace find_object {
 
@@ -223,7 +216,6 @@ QMultiMap<int, int> Vocabulary::addWords(const cv::Mat & descriptors, int object
 					cv::flann::Index tmpIndex;
 					tmpIndex.build(notIndexedDescriptors_, cv::flann::LinearIndexParams(), Settings::getFlannDistanceType());
 					tmpIndex.knnSearch(descriptors.row(i), tmpResults, tmpDists, notIndexedDescriptors_.rows>1?k:1, Settings::getFlannSearchParams());
-
 				}
 
 				if( tmpDists.type() == CV_32S )
@@ -336,7 +328,6 @@ void Vocabulary::update()
 	{
 		cv::flann::IndexParams * params = Settings::createFlannIndexParams();
 		flannIndex_.build(indexedDescriptors_, *params, Settings::getFlannDistanceType());
-		//flann::SavedIndexParams(indexedDescriptors_,"SavedIndexParams..fln");
 		delete params;
 	}
 }
@@ -402,7 +393,6 @@ void Vocabulary::search(const cv::Mat & descriptors, cv::Mat & results, cv::Mat 
 		else
 		{
 			flannIndex_.knnSearch(descriptors, results, dists, k, Settings::getFlannSearchParams());
-			//flann::save_to_file(descriptors,"result.hdf5","results");
 		}
 
 		if( dists.type() == CV_32S )

@@ -1,0 +1,38 @@
+# CMake generated Testfile for 
+# Source directory: /src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests
+# Build directory: /src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(CMake.List "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ListTest.cmake")
+add_test(CMake.VariableWatch "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/VariableWatchTest.cmake")
+add_test(CMake.Include "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/IncludeTest.cmake")
+add_test(CMake.FindBase "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/FindBaseTest.cmake")
+add_test(CMake.Toolchain "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ToolchainTest.cmake")
+add_test(CMake.GetFilenameComponentRealpath "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/GetFilenameComponentRealpathTest.cmake")
+add_test(CMake.Version "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/VersionTest.cmake")
+add_test(CMake.Message "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/MessageTest.cmake")
+add_test(CMake.File "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/FileTest.cmake")
+add_test(CMake.SeparateArguments "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/SeparateArgumentsTest.cmake")
+add_test(CMake.ImplicitLinkInfo "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ImplicitLinkInfoTest.cmake")
+add_test(CMake.ModuleNotices "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ModuleNoticesTest.cmake")
+add_test(CMake.GetProperty "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/GetPropertyTest.cmake")
+add_test(CMake.If "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/IfTest.cmake")
+add_test(CMake.String "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/StringTest.cmake")
+add_test(CMake.Math "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/MathTest.cmake")
+add_test(CMake.CMakeMinimumRequired "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/CMakeMinimumRequiredTest.cmake")
+add_test(CMake.CompilerIdVendor "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/CompilerIdVendorTest.cmake")
+add_test(CMake.ProcessorCount "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-DKWSYS_TEST_EXE=/src/app/kubeDimension/tools/CMake-3.4.0/Source/kwsys/cmsysTestsCxx" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ProcessorCountTest.cmake")
+add_test(CMake.PushCheckState "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/PushCheckStateTest.cmake")
+add_test(CMake.While "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/WhileTest.cmake")
+add_test(CMake.CMakeHostSystemInformation "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/CMakeHostSystemInformationTest.cmake")
+add_test(CMake.FileDownload "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/FileDownloadTest.cmake")
+set_tests_properties(CMake.FileDownload PROPERTIES  PASS_REGULAR_EXPRESSION "file already exists with expected MD5 sum")
+add_test(CMake.FileDownloadBadHash "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/FileDownloadBadHashTest.cmake")
+set_tests_properties(CMake.FileDownloadBadHash PROPERTIES  WILL_FAIL "TRUE")
+add_test(CMake.FileUpload "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/FileUploadTest.cmake")
+add_test(CMake.ELF "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/ELFTest.cmake")
+add_test(CMake.EndStuff "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-Ddir:STRING=/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/EndStuffTest" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/EndStuffTest.cmake")
+add_test(CMake.GetPrerequisites "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-DCTEST_CONFIGURATION_TYPE:STRING=\${CTEST_CONFIGURATION_TYPE}" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/GetPrerequisitesTest.cmake")
+add_test(CMake.PolicyCheck "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-DCMake_BINARY_DIR:PATH=/src/app/kubeDimension/tools/CMake-3.4.0" "-DCMake_SOURCE_DIR:PATH=/src/app/kubeDimension/tools/CMake-3.4.0" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/PolicyCheckTest.cmake")
+add_test(CMake.CheckSourceTree "/src/app/kubeDimension/tools/CMake-3.4.0/bin/cmake" "-DCMake_BINARY_DIR:PATH=/src/app/kubeDimension/tools/CMake-3.4.0" "-DCMake_SOURCE_DIR:PATH=/src/app/kubeDimension/tools/CMake-3.4.0" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-DHOME:STRING=/root" "-P" "/src/app/kubeDimension/tools/CMake-3.4.0/Tests/CMakeTests/CheckSourceTreeTest.cmake")

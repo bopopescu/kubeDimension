@@ -1,0 +1,281 @@
+/* -*- c++ -*-
+ * Copyright (C) 2007-2015 Hypertable, Inc.
+ *
+ * This file is part of Hypertable.
+ *
+ * Hypertable is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; version 3 of the
+ * License, or any later version.
+ *
+ * Hypertable is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301, USA.
+ */
+
+#ifndef Hypertable_Lib_Table_h
+#define Hypertable_Lib_Table_h
+
+#include <Hypertable/Lib/ClientObject.h>
+#include <Hypertable/Lib/NameIdMapper.h>
+#include <Hypertable/Lib/ScanSpec.h>
+#include <Hypertable/Lib/Schema.h>
+#include <Hypertable/Lib/RangeLocator.h>
+#include <Hypertable/Lib/TableIdentifier.h>
+#include <Hypertable/Lib/RangeServer/Protocol.h>
+
+#include <AsyncComm/ApplicationQueueInterface.h>
+
+#include <mutex>
+
+namespace Hyperspace {
+  class Session;
+}
+
+namespace Hypertable {
+  
+  using namespace Lib;
+
+  class ConnectionManager;
+  class ResultCallback;
+  class TableScannerAsync;
+  class TableScanner;
+  class TableMutator;
+  class TableMutatorAsync;
+  class Namespace;
+
+  class Table;
+  typedef std::shared_ptr<Table> TablePtr;
+
+  /** Represents an open table.
+   */
+  class Table : public ClientObject {
+
+  public:
+
+    enum {
+      OPEN_FLAG_BYPASS_TABLE_CACHE = 0x01,
+      OPEN_FLAG_REFRESH_TABLE_CACHE = 0x02,
+      OPEN_FLAG_NO_AUTO_TABLE_REFRESH = 0x04,
+      SCANNER_FLAG_IGNORE_INDEX = 0x01,
+      SCANNER_FLAG_PROFILE = 0x02
+    };
+
+    enum {
+      MUTATOR_FLAG_NO_LOG_SYNC = Lib::RangeServer::Protocol::UPDATE_FLAG_NO_LOG_SYNC,
+      MUTATOR_FLAG_NO_LOG      = Lib::RangeServer::Protocol::UPDATE_FLAG_NO_LOG
+    };
+
+    Table(PropertiesPtr &, RangeLocatorPtr &, ConnectionManagerPtr &,
+          Hyperspace::SessionPtr &, ApplicationQueueInterfacePtr &, NameIdMapperPtr &,
+          const std::string &name, int32_t flags = 0, uint32_t default_timeout_ms = 0);
+    virtual ~Table();
+
+    /**
+     * Creates a mutator on this table
+     *
+     * @param timeout_ms maximum time in milliseconds to allow
+     *        mutator methods to execute before throwing an exception
+     * @param flags mutator flags
+     * @param flush_interval_ms time interval in milliseconds to flush
+     *        data. 0 disables it.
+     * @return newly constructed mutator object
+     */
+    TableMutator *create_mutator(uint32_t timeout_ms = 0,
+                                 uint32_t flags = 0,
+                                 uint32_t flush_interval_ms = 0);
+    /**
+     * Creates an asynchronous mutator on this table
+     *
+     * @param cb Pointer to result callback
+     * @param timeout_ms maximum time in milliseconds to allow
+     *        mutator methods to execute before throwing an exception
+     * @param flags mutator flags
+     * @return newly constructed mutator object
+     */
+    TableMutatorAsync *create_mutator_async(ResultCallback *cb,
+                                            uint32_t timeout_ms = 0,
+                                            uint32_t flags = 0);
+    /**
+     * Creates a synchronous scanner on this table
+     *
+     * @param scan_spec scan specification
+     * @param timeout_ms maximum time in milliseconds to allow
+     *        scanner methods to execute before throwing an exception
+     * @param flags scanner flags
+     * @return pointer to scanner object
+     */
+    TableScanner *create_scanner(const ScanSpec &scan_spec,
+                                 uint32_t timeout_ms = 0, int32_t flags = 0);
+
+
+    /**
+     * Creates an asynchronous scanner on this table
+     *
+     * @param cb Callback to be notified when scan results arrive
+     * @param scan_spec scan specification
+     * @param timeout_ms maximum time in milliseconds to allow
+     *        scanner methods to execute before throwing an exception
+     * @param flags Scanner flags
+     * @return pointer to scanner object
+     */
+    TableScannerAsync *create_scanner_async(ResultCallback *cb,
+                                            const ScanSpec &scan_spec,
+                                            uint32_t timeout_ms = 0,
+                                            int32_t flags = 0);
+
+    void get_identifier(TableIdentifier *table_id_p) {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      refresh_if_required();
+      *table_id_p = m_table;
+    }
+
+    const std::string& get_name() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      return m_name;
+    }
+
+    SchemaPtr schema() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      refresh_if_required();
+      return m_schema;
+    }
+
+    /**
+     * Refresh schema etc.
+     */
+    void refresh();
+
+    /**
+     * Get a copy of table identifier and schema atomically
+     *
+     * @param table_identifier reference of the table identifier copy
+     * @param schema reference of the schema copy
+     */
+    void get(TableIdentifierManaged &table_identifier, SchemaPtr &schema);
+
+    /**
+     * Make a copy of table identifier and schema atomically also
+     */
+    void refresh(TableIdentifierManaged &table_identifier, SchemaPtr &schema);
+
+    bool need_refresh() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      return m_stale;
+    }
+
+    void invalidate() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      m_stale = true;
+    }
+
+    bool auto_refresh() {
+      return (m_flags & OPEN_FLAG_NO_AUTO_TABLE_REFRESH) == 0;
+    }
+
+    int32_t get_flags() { return m_flags; }
+
+    /** returns true if this table requires a index table */
+    bool needs_index_table() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      for (auto cf : m_schema->get_column_families()) {
+        if (cf->get_deleted())
+          continue;
+        if (cf->get_value_index())
+          return true;
+      }
+      return false;
+    }
+
+    /** returns true if this table requires a qualifier index table */
+    bool needs_qualifier_index_table() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      for (auto cf : m_schema->get_column_families()) {
+        if (cf->get_deleted())
+          continue;
+        if (cf->get_qualifier_index())
+          return true;
+      }
+      return false;
+    }
+
+    /** returns true if this table has an index */
+    bool has_index_table() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      return (m_index_table!=0);
+    }
+
+    /** returns true if this table has a qualifier index */
+    bool has_qualifier_index_table() {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      return (m_qualifier_index_table != 0);
+    }
+
+    /** sets the index table. The index table is created by the Namespace,
+     * because it's the only object with access to the TableCache  */
+    void set_index_table(TablePtr idx) {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      HT_ASSERT(idx != 0 ? m_index_table == 0 : 1);
+      m_index_table = idx;
+    }
+
+    /** sets the qualifier index table */
+    void set_qualifier_index_table(TablePtr idx) {
+      std::lock_guard<std::mutex> lock(m_mutex);
+      HT_ASSERT(idx != 0 ? m_qualifier_index_table == 0 : 1);
+      m_qualifier_index_table = idx;
+    }
+
+    TablePtr get_index_table() {
+      return m_index_table;
+    }
+
+    TablePtr get_qualifier_index_table() {
+      return m_qualifier_index_table;
+    }
+
+    void set_namespace(Namespace *ns) {
+      m_namespace = ns;
+    }
+
+    Namespace *get_namespace() {
+      return m_namespace;
+    }
+
+    RangeLocatorPtr get_range_locator() { return m_range_locator; }
+
+  private:
+    void initialize();
+    void refresh_if_required();
+
+    /// Mutex for serializing member access
+    std::mutex m_mutex;
+    PropertiesPtr          m_props;
+    Comm                  *m_comm;
+    ConnectionManagerPtr   m_conn_manager;
+    Hyperspace::SessionPtr m_hyperspace;
+    SchemaPtr              m_schema;
+    RangeLocatorPtr        m_range_locator;
+    ApplicationQueueInterfacePtr m_app_queue;
+    NameIdMapperPtr        m_namemap;
+    std::string                 m_name;
+    TableIdentifierManaged m_table;
+    int32_t                m_flags;
+    int                    m_timeout_ms;
+    bool                   m_stale;
+    std::string                 m_toplevel_dir;
+    size_t                 m_scanner_queue_size;
+    TablePtr               m_index_table;
+    TablePtr               m_qualifier_index_table;
+    Namespace             *m_namespace;
+  };
+
+}
+
+#endif // Hypertable_Lib_Table_h

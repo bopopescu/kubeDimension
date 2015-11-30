@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.3)
 
 # Detect if it is called by catkin
 SET(CATKIN_BUILD ${CATKIN_TOPLEVEL})
@@ -29,42 +29,27 @@ ADD_DEFINITIONS(-DPROJECT_VERSION="${PROJECT_VERSION}")
 ADD_DEFINITIONS(-DPROJECT_NAME="${PROJECT_NAME}")
 
 ####### DEPENDENCIES #######
+#find_package(Boost COMPONENTS thread filesystem system locale random program_options chrono atomic)
+find_package(Boost COMPONENTS regex date_time system filesystem thread graph locale random program_options chrono atomic)
 FIND_PACKAGE(OpenCV 3 REQUIRED) # tested on 2.3.1
 FIND_PACKAGE(Qt4 COMPONENTS QtDBus QtXml QtCore QtGui QtNetwork REQUIRED)
-
-cmake_minimum_required(VERSION 2.8.8)
-project(catch_builder CXX)
-include(ExternalProject)
-find_package(Git REQUIRED)
-
-ExternalProject_Add(
-    catch
-    PREFIX ${CMAKE_BINARY_DIR}/catch
-    GIT_REPOSITORY https://github.com/philsquared/Catch.git
-    TIMEOUT 10
-    UPDATE_COMMAND ${GIT_EXECUTABLE} pull
-    CONFIGURE_COMMAND ""
-    BUILD_COMMAND ""
-    INSTALL_COMMAND ""
-    LOG_DOWNLOAD ON
-   )
-
-# Expose required variable (CATCH_INCLUDE_DIR) to parent scope
-ExternalProject_Get_Property(catch source_dir)
-set(CATCH_INCLUDE_DIR ${source_dir}/include CACHE INTERNAL "Path to include folder for Catch")
-
-find_package(Tufao REQUIRED)
+find_package(Tufao 0.4 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(NanoMsg REQUIRED)
 find_package(ZeroMQ REQUIRED)
 find_package(HDF5 REQUIRED)
 find_package(Redis REQUIRED)
+find_package(cpprest REQUIRED)
+find_package(Crypto REQUIRED)
+find_package(OpenSSL 1.0.0 REQUIRED)
+find_package( Threads REQUIRED)
 
 SET(INCLUDE_DIRS
+	${OPENSSL_LIBRARIES}
         ${OpenCV_INCLUDE_DIRS}
-        /usr/local/include/Tufao/
-        ${TUFAO_LIBRARY}
+	${cpprest_LIB_DIR}
+        ${TUFAO_INCLUDE_DIR}
         ${TBB_INCLUDE_DIRS}
         ${NANOMSG_INCLUDE_DIR}
         ${ZEROMQ_INCLUDE_DIRS}
@@ -75,6 +60,7 @@ SET(INCLUDE_DIRS
 SET(LIBRARIES
     ${QT_LIBRARIES}
     ${TUFAO_LIBRARY}
+    ${cpprest_LIBRARIES}
     ${HIREDIS_LIBRARIES}
     ${OpenCV_LIBS}
     ${TBB_LIBRARIES}

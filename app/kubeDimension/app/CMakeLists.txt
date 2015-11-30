@@ -6,7 +6,10 @@ ADD_DEFINITIONS(
     -lssl -lcrypto
 )
 
+set(Boost_USE_STATIC_LIBS OFF) 
 set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME OFF) 
+
 find_package(Tufao 0.4 REQUIRED)
 find_package(TBB REQUIRED)
 find_package(Eigen3 REQUIRED)
@@ -18,6 +21,7 @@ find_package(cpprest REQUIRED)
   find_package(Crypto REQUIRED)
   find_package(OpenSSL 1.0.0 REQUIRED)
 INCLUDE(${QT_USE_FILE})
+
 SET(INCLUDE_DIRS
         ${CMAKE_CURRENT_SOURCE_DIR}/../include
         ${CMAKE_CURRENT_SOURCE_DIR}

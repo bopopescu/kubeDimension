@@ -1,3 +1,4 @@
+app/kubeDimension/bin/find_object*
 app/kubeDimension/bin/tempVoc.yaml
 *flann.cpp.o
 app/kubeDimension/src/*/build
